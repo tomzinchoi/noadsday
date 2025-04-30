@@ -1,0 +1,7 @@
+This directory will contain expert profile photos.
+Default images should be named:
+- catherine-price.jpg
+- adam-gazzaley.jpg
+- tim-wu.jpg
+
+Until real images are sourced, the application will use fallback placeholders.

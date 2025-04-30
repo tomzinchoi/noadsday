@@ -1,0 +1,1 @@
+This directory will contain image files for the website, including the no-ads-day-gathering.jpg image for the About page.
