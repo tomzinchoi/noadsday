@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, useInView } from 'framer-motion'
 import Link from 'next/link'
 import { gsap } from 'gsap'
 
@@ -7,6 +7,12 @@ export default function Footer() {
   const [email, setEmail] = useState('')
   const [isSubmitted, setIsSubmitted] = useState(false)
   const confettiRef = useRef<HTMLDivElement>(null)
+  const [currentYear, setCurrentYear] = useState('2023') // Default value
+  
+  // Set the current year on the client side only
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear().toString())
+  }, [])
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -17,7 +23,7 @@ export default function Footer() {
     setIsSubmitted(true)
     
     // Create confetti animation
-    if (confettiRef.current) {
+    if (confettiRef.current && typeof window !== 'undefined') {
       createConfetti()
     }
     
@@ -29,6 +35,9 @@ export default function Footer() {
   }
   
   const createConfetti = () => {
+    // Only run on client side
+    if (typeof window === 'undefined') return
+    
     const container = confettiRef.current
     if (!container) return
     
@@ -210,7 +219,7 @@ export default function Footer() {
         
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-white/50 text-sm">
-            &copy; {new Date().getFullYear()} National No-Ads Day | Educational Project
+            &copy; {currentYear} National No-Ads Day | Educational Project
           </p>
         </div>
       </div>
@@ -220,7 +229,7 @@ export default function Footer() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        onClick={() => typeof window !== 'undefined' && window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-lg hover:bg-primary/90 transition-colors"
         aria-label="Back to top"
       >

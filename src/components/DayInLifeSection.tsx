@@ -36,7 +36,7 @@ const dailyActivities = [
   },
   {
     time: '09:30',
-    activity: 'Work - Morning',
+    activity: 'Work AM',
     description: 'Checking email, work websites, news',
     adsWith: 250,
     adsWithout: 30,
@@ -52,7 +52,7 @@ const dailyActivities = [
   },
   {
     time: '14:00',
-    activity: 'Work - Afternoon',
+    activity: 'Work PM',
     description: 'Online meetings, research, email',
     adsWith: 230,
     adsWithout: 25,
@@ -68,7 +68,7 @@ const dailyActivities = [
   },
   {
     time: '18:30',
-    activity: 'Evening Relaxation',
+    activity: 'Relax Mode',
     description: 'Streaming services, mobile games',
     adsWith: 350,
     adsWithout: 0,
@@ -76,7 +76,7 @@ const dailyActivities = [
   },
   {
     time: '21:00',
-    activity: 'Social Media Time',
+    activity: 'Scroll Time',
     description: 'Scrolling through feeds before bed',
     adsWith: 220,
     adsWithout: 0,
@@ -95,7 +95,7 @@ const dailyActivities = [
 export default function DayInLifeSection() {
   const [viewMode, setViewMode] = useState('with-ads') // 'with-ads' or 'no-ads'
   const [totalAds, setTotalAds] = useState(0)
-  const timelineRef = useRef<HTMLDivElement>(null)
+  const chartRef = useRef<HTMLDivElement>(null)
   
   useEffect(() => {
     // Calculate and update total ads count
@@ -115,33 +115,81 @@ export default function DayInLifeSection() {
   }, [viewMode])
   
   useEffect(() => {
-    if (!timelineRef.current) return
+    if (!chartRef.current) return
     
-    // Create ScrollTrigger animations for timeline items
-    const timelineItems = timelineRef.current.querySelectorAll('.timeline-item')
+    // Get max ad count for scaling
+    const maxAds = Math.max(...dailyActivities.map(item => 
+      viewMode === 'with-ads' ? item.adsWith : item.adsWithout
+    ))
+    
+    // Create ScrollTrigger animations for chart bars
+    const barContainers = chartRef.current.querySelectorAll('.bar-container')
     
     const ctx = gsap.context(() => {
-      timelineItems.forEach((item, index) => {
-        gsap.fromTo(
-          item,
-          { opacity: 0, y: 30 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.7,
-            scrollTrigger: {
-              trigger: item,
-              start: "top 80%",
-              toggleActions: "play none none reverse"
-            },
-            delay: index * 0.1
-          }
-        )
+      // Clear any existing animations
+      ScrollTrigger.getAll().forEach(t => {
+        if (t.vars.id === 'adBarsAnimation') {
+          t.kill()
+        }
       })
-    }, timelineRef)
+      
+      // Animate bars from bottom to top
+      barContainers.forEach((container, index) => {
+        const bar = container.querySelector('.bar')
+        const dots = container.querySelectorAll('.ad-dot')
+        
+        if (!bar) return
+        
+        // Reset bar height
+        gsap.set(bar, { 
+          height: 0,
+          opacity: 0
+        })
+        
+        // Reset dots
+        gsap.set(dots, {
+          opacity: 0,
+          y: 20
+        })
+        
+        // Animate bar growing from bottom
+        gsap.to(bar, {
+          height: '100%',
+          opacity: 1,
+          duration: 1,
+          delay: index * 0.1,
+          ease: 'power2.out',
+          scrollTrigger: {
+            id: 'adBarsAnimation',
+            trigger: container,
+            start: 'top 90%',
+            toggleActions: 'play none none reverse'
+          }
+        })
+        
+        // Animate dots appearing
+        gsap.to(dots, {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          stagger: 0.02,
+          delay: index * 0.1 + 0.3,
+          ease: 'back.out(1.7)',
+          scrollTrigger: {
+            id: 'adDotsAnimation',
+            trigger: container,
+            start: 'top 90%',
+            toggleActions: 'play none none reverse'
+          }
+        })
+      })
+    }, chartRef)
     
     return () => ctx.revert()
-  }, [])
+  }, [viewMode])
+  
+  // Calculate the max height for normalization
+  const maxAdCount = Math.max(...dailyActivities.map(item => item.adsWith))
   
   return (
     <section 
@@ -202,93 +250,142 @@ export default function DayInLifeSection() {
           </div>
         </div>
         
-        {/* Timeline Infographic */}
-        <div ref={timelineRef} className="max-w-4xl mx-auto">
-          {dailyActivities.map((activity, index) => (
-            <div 
-              key={activity.time} 
-              className="timeline-item grid grid-cols-[80px_1fr] md:grid-cols-[100px_1fr] gap-4 md:gap-8 mb-8 opacity-0"
-            >
-              {/* Time Column */}
-              <div className="text-right">
-                <div className="text-lg md:text-xl font-semibold text-primary">
-                  {activity.time}
-                </div>
-                <div className="text-4xl mt-2">
-                  {activity.icon}
-                </div>
-              </div>
-              
-              {/* Activity Column */}
-              <div>
+       
+        
+        {/* Horizontal Chart */}
+        <div 
+          ref={chartRef} 
+          className="max-w-5xl mx-auto mb-16 overflow-x-hidden"
+        >
+          <div className="flex flex-col min-w-[768px]">
+            
+            
+            {/* Chart body with grid */}
+            <div className="relative border-l border-b border-dark/10 h-[400px]">
+              {/* Horizontal grid lines */}
+              {[0, 0.25, 0.5, 0.75, 1].map((ratio) => (
                 <div 
-                  className={`relative p-6 rounded-lg shadow-md ${
-                    viewMode === 'with-ads' 
-                      ? 'bg-white border-l-4 border-primary' 
-                      : 'bg-secondary/10 border-l-4 border-secondary'
-                  }`}
+                  key={ratio} 
+                  className="absolute left-0 right-0 border-t border-dark/10"
+                  style={{ bottom: `${ratio * 100}%` }}
                 >
-                  <h3 className="text-xl font-bold mb-2">
-                    {activity.activity}
-                  </h3>
-                  <p className="text-dark/70 mb-4">
-                    {activity.description}
-                  </p>
-                  
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-dark/50">
-                      {viewMode === 'with-ads' ? 'Ad Exposure:' : 'Interruptions:'}
+                  {ratio > 0 && 
+                    <span className="absolute -left-14 -translate-y-1/2 text-xs text-dark/50">
+                      {Math.round(ratio * maxAdCount)}
                     </span>
-                    <span className={`font-bold ${
-                      viewMode === 'with-ads' ? 'text-primary' : 'text-secondary'
-                    }`}>
-                      {viewMode === 'with-ads' 
-                        ? `${activity.adsWith} ads` 
-                        : `${activity.adsWithout} ${activity.adsWithout === 1 ? 'interruption' : 'interruptions'}`}
-                    </span>
-                  </div>
-                  
-                  {/* Ad Visualization - dots representing ads in this timeframe */}
-                  <div className="mt-4 flex flex-wrap gap-1">
-                    {viewMode === 'with-ads' && activity.adsWith > 0 && (
-                      Array.from({ length: Math.min(50, activity.adsWith) }).map((_, i) => (
-                        <div 
-                          key={i}
-                          className={`w-2 h-2 rounded-full ${
-                            i % 5 === 0 ? 'bg-primary' : 'bg-primary/40'
-                          }`}
-                          title={`${activity.adsWith} ads during this activity`}
-                        ></div>
-                      ))
-                    )}
-                    
-                    {viewMode === 'no-ads' && activity.adsWithout > 0 && (
-                      Array.from({ length: activity.adsWithout }).map((_, i) => (
-                        <div 
-                          key={i}
-                          className="w-2 h-2 rounded-full bg-secondary"
-                          title={`${activity.adsWithout} essential interruptions`}
-                        ></div>
-                      ))
-                    )}
-                    
-                    {/* "And more" indicator if too many to display */}
-                    {viewMode === 'with-ads' && activity.adsWith > 50 && (
-                      <span className="text-xs text-primary/70 ml-1 self-center">
-                        +{activity.adsWith - 50} more
-                      </span>
-                    )}
-                  </div>
+                  }
                 </div>
-                
-                {/* Connector line to next item */}
-                {index < dailyActivities.length - 1 && (
-                  <div className="w-0.5 h-10 bg-primary/20 ml-6"></div>
-                )}
+              ))}
+              
+              {/* Bars chart */}
+              <div className="flex h-full items-end">
+                {dailyActivities.map((activity, index) => {
+                  const adCount = viewMode === 'with-ads' ? activity.adsWith : activity.adsWithout
+                  const barHeightPercent = (adCount / maxAdCount) * 100
+                  
+                  return (
+                    <div 
+                      key={activity.time} 
+                      className="bar-container flex-1 flex flex-col items-center px-1 relative h-full group"
+                    >
+                      {/* Bar */}
+                      <div 
+                        className={`bar w-full relative ${
+                          viewMode === 'with-ads' ? 'bg-primary/20' : 'bg-secondary/20'
+                        } rounded-t-md`}
+                        style={{ height: `${barHeightPercent}%` }}
+                      >
+                        {/* Ad count number */}
+                        <div className={`absolute -top-7 left-1/2 -translate-x-1/2 font-bold text-sm ${
+                          viewMode === 'with-ads' ? 'text-primary' : 'text-secondary'
+                        }`}>
+                          {adCount}
+                        </div>
+                        
+                        {/* Ad dots visualization */}
+                        <div className="absolute inset-0 p-2 overflow-hidden">
+                          {viewMode === 'with-ads' && adCount > 0 && (
+                            Array.from({ length: Math.min(50, adCount) }).map((_, i) => (
+                              <div 
+                                key={i}
+                                className={`ad-dot w-1.5 h-1.5 rounded-full absolute ${
+                                  i % 5 === 0 ? 'bg-primary' : 'bg-primary/40'
+                                }`}
+                                style={{
+                                  left: `${Math.random() * 90 + 5}%`,
+                                  top: `${Math.random() * 90 + 5}%`
+                                }}
+                              ></div>
+                            ))
+                          )}
+                          
+                          {viewMode === 'no-ads' && adCount > 0 && (
+                            Array.from({ length: adCount }).map((_, i) => (
+                              <div 
+                                key={i}
+                                className="ad-dot w-1.5 h-1.5 rounded-full absolute bg-secondary"
+                                style={{
+                                  left: `${Math.random() * 90 + 5}%`,
+                                  top: `${Math.random() * 90 + 5}%`
+                                }}
+                              ></div>
+                            ))
+                          )}
+                        </div>
+                      </div>
+                      
+                      {/* X-axis labels (time) */}
+                      <div className="absolute -bottom-20 left-0 right-0 text-center">
+                        <div className="text-2xl mb-1">{activity.icon}</div>
+                        <div className="text-primary font-semibold text-sm">{activity.time}</div>
+                        <div className="text-xs font-medium text-dark/70 whitespace-nowrap mt-1">{activity.activity}</div>
+                      </div>
+                      
+                      {/* Hover tooltip */}
+                      <div className="absolute left-1/2 bottom-full mb-2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+                        <div className={`p-3 rounded-lg shadow-lg max-w-[220px] text-sm ${
+                          viewMode === 'with-ads' ? 'bg-primary text-white' : 'bg-secondary text-white'
+                        }`}>
+                          <div className="font-bold">{activity.activity} ({activity.time})</div>
+                          <div className="mt-1">{activity.description}</div>
+                          <div className="mt-2 font-bold border-t border-white/20 pt-1">
+                            {viewMode === 'with-ads' 
+                              ? `${activity.adsWith} ads` 
+                              : `${activity.adsWithout} ${activity.adsWithout === 1 ? 'interruption' : 'interruptions'}`}
+                          </div>
+                          <div className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-0 h-0 border-8 border-transparent" style={{
+                            borderTopColor: viewMode === 'with-ads' ? '#1a73e8' : '#34a853'
+                          }}></div>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })}
               </div>
             </div>
-          ))}
+            
+            {/* X-axis spacing for labels */}
+            <div className="h-20"></div>
+          </div>
         </div>
+         {/* Ad Exposure Notes */}
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="mt-12 text-center"
+        >
+          <p className="text-sm text-dark/60 max-w-3xl mx-auto p-4 border-t border-gray-200">
+          <ul>
+            <li>Avg. Daily Ads: 4,000–10,000 (includes digital & traditional media)</li>
+            <li>Activity-Based Estimate: Approx. 1,500 ads shown for illustration purposes only</li>
+            <li>No-Ads Day Reduction: Based on ad blockers & media fasting (estimated 80–95% drop)</li>
+            <li>Sources: Siteefy, B9 Solution, USC, ad blocker reports</li>
+          </ul>
+          </p>
+        </motion.div>
         
         {/* Final comparison - updated with research-backed information */}
         <motion.div

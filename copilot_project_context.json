@@ -1,0 +1,480 @@
+{
+  "timestamp": "2025-05-01T07:20:30.113560",
+  "structure": {
+    ".next": {
+      "cache": {
+        "config.json": {
+          "path": ".next/cache/config.json",
+          "size": 185,
+          "preview": "{\n\t\"telemetry\": {\n\t\t\"notifiedAt\": \"1745904259325\",\n\t\t\"anonymousId\": \"06341c6574da1c04dfe676a4d27cfd6de08b9a774027e1066520e56fd145879e\",\n\t\t\"salt\": \"60d5f047f50f19090a34ca82047c48ba\"\n\t}\n}"
+        },
+        "swc": {
+          "plugins": {
+            "v7_linux_x86_64_0.106.15": "MAX_DEPTH_REACHED"
+          }
+        },
+        "webpack": {
+          "client-development": {
+            "0.pack.gz": {
+              "path": ".next/cache/webpack/client-development/0.pack.gz",
+              "size": 79744,
+              "preview": "[binary or unreadable file]"
+            },
+            "1.pack.gz": {
+              "path": ".next/cache/webpack/client-development/1.pack.gz",
+              "size": 632200
+            },
+            "10.pack.gz": {
+              "path": ".next/cache/webpack/client-development/10.pack.gz",
+              "size": 5007441
+            },
+            "2.pack.gz": {
+              "path": ".next/cache/webpack/client-development/2.pack.gz",
+              "size": 3375729
+            },
+            "3.pack.gz": {
+              "path": ".next/cache/webpack/client-development/3.pack.gz",
+              "size": 3057582
+            },
+            "4.pack.gz": {
+              "path": ".next/cache/webpack/client-development/4.pack.gz",
+              "size": 4963534
+            },
+            "5.pack.gz": {
+              "path": ".next/cache/webpack/client-development/5.pack.gz",
+              "size": 21504,
+              "preview": "[binary or unreadable file]"
+            },
+            "6.pack.gz": {
+              "path": ".next/cache/webpack/client-development/6.pack.gz",
+              "size": 9487827
+            },
+            "7.pack.gz": {
+              "path": ".next/cache/webpack/client-development/7.pack.gz",
+              "size": 179011
+            },
+            "8.pack.gz": {
+              "path": ".next/cache/webpack/client-development/8.pack.gz",
+              "size": 115200
+            },
+            "9.pack.gz": {
+              "path": ".next/cache/webpack/client-development/9.pack.gz",
+              "size": 591262
+            },
+            "index.pack.gz": {
+              "path": ".next/cache/webpack/client-development/index.pack.gz",
+              "size": 151958
+            },
+            "index.pack.gz.old": {
+              "path": ".next/cache/webpack/client-development/index.pack.gz.old",
+              "size": 151803
+            }
+          },
+          "client-development-fallback": {
+            "0.pack.gz": {
+              "path": ".next/cache/webpack/client-development-fallback/0.pack.gz",
+              "size": 11629962
+            },
+            "index.pack.gz": {
+              "path": ".next/cache/webpack/client-development-fallback/index.pack.gz",
+              "size": 77086,
+              "preview": "[binary or unreadable file]"
+            }
+          },
+          "server-development": {
+            "0.pack.gz": {
+              "path": ".next/cache/webpack/server-development/0.pack.gz",
+              "size": 276195
+            },
+            "1.pack.gz": {
+              "path": ".next/cache/webpack/server-development/1.pack.gz",
+              "size": 505606
+            },
+            "10.pack.gz": {
+              "path": ".next/cache/webpack/server-development/10.pack.gz",
+              "size": 733542
+            },
+            "11.pack.gz": {
+              "path": ".next/cache/webpack/server-development/11.pack.gz",
+              "size": 14351,
+              "preview": "[binary or unreadable file]"
+            },
+            "2.pack.gz": {
+              "path": ".next/cache/webpack/server-development/2.pack.gz",
+              "size": 270676
+            },
+            "3.pack.gz": {
+              "path": ".next/cache/webpack/server-development/3.pack.gz",
+              "size": 1064,
+              "preview": "[binary or unreadable file]"
+            },
+            "4.pack.gz": {
+              "path": ".next/cache/webpack/server-development/4.pack.gz",
+              "size": 1065,
+              "preview": "[binary or unreadable file]"
+            },
+            "5.pack.gz": {
+              "path": ".next/cache/webpack/server-development/5.pack.gz",
+              "size": 42128,
+              "preview": "[binary or unreadable file]"
+            },
+            "6.pack.gz": {
+              "path": ".next/cache/webpack/server-development/6.pack.gz",
+              "size": 386179
+            },
+            "7.pack.gz": {
+              "path": ".next/cache/webpack/server-development/7.pack.gz",
+              "size": 11273,
+              "preview": "[binary or unreadable file]"
+            },
+            "8.pack.gz": {
+              "path": ".next/cache/webpack/server-development/8.pack.gz",
+              "size": 94317,
+              "preview": "[binary or unreadable file]"
+            },
+            "9.pack.gz": {
+              "path": ".next/cache/webpack/server-development/9.pack.gz",
+              "size": 343889
+            },
+            "index.pack.gz": {
+              "path": ".next/cache/webpack/server-development/index.pack.gz",
+              "size": 63097,
+              "preview": "[binary or unreadable file]"
+            },
+            "index.pack.gz.old": {
+              "path": ".next/cache/webpack/server-development/index.pack.gz.old",
+              "size": 63104,
+              "preview": "[binary or unreadable file]"
+            }
+          }
+        }
+      },
+      "package.json": {
+        "path": ".next/package.json",
+        "size": 20,
+        "preview": "{\"type\": \"commonjs\"}"
+      },
+      "react-loadable-manifest.json": {
+        "path": ".next/react-loadable-manifest.json",
+        "size": 2,
+        "preview": "{}"
+      },
+      "server": {
+        "interception-route-rewrite-manifest.js": {
+          "path": ".next/server/interception-route-rewrite-manifest.js",
+          "size": 47,
+          "preview": "self.__INTERCEPTION_ROUTE_REWRITE_MANIFEST=\"[]\""
+        },
+        "middleware-manifest.json": {
+          "path": ".next/server/middleware-manifest.json",
+          "size": 83,
+          "preview": "{\n  \"version\": 3,\n  \"middleware\": {},\n  \"functions\": {},\n  \"sortedMiddleware\": []\n}"
+        },
+        "middleware-react-loadable-manifest.js": {
+          "path": ".next/server/middleware-react-loadable-manifest.js",
+          "size": 35,
+          "preview": "self.__REACT_LOADABLE_MANIFEST=\"{}\""
+        },
+        "next-font-manifest.js": {
+          "path": ".next/server/next-font-manifest.js",
+          "size": 113,
+          "preview": "self.__NEXT_FONT_MANIFEST=\"{\\\"pages\\\":{},\\\"app\\\":{},\\\"appUsingSizeAdjust\\\":false,\\\"pagesUsingSizeAdjust\\\":false}\""
+        },
+        "next-font-manifest.json": {
+          "path": ".next/server/next-font-manifest.json",
+          "size": 77,
+          "preview": "{\"pages\":{},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"
+        },
+        "pages": {
+          "_app.js": {
+            "path": ".next/server/pages/_app.js",
+            "size": 9596,
+            "preview": "/*\n * ATTENTION: An \"eval-source-map\" devtool has been used.\n * This devtool is neither made for production nor for readable output files.\n * It uses \"eval()\" calls to create a separate source file with attached SourceMaps in the browser devtools.\n * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)\n * or disable the default devtool with \"devtool: false\".\n * If you are looking for production-ready output files, see mode: \"production\" (https://webpack.js.org/configuration/mode/).\n */\n(() => {\nvar exports = {};\nexports.id = \"pages/_app\";\nexports.ids = [\"pages/_app\"];\nexports.modules = {\n\n/***/ \"./src/pages/_app.tsx\":\n/*!****************************!*\\\n  !*** ./src/pages/_app.tsx ***!\n  \\****************************/\n/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {\n\n\"use strict\";\neval(\"__webpack_require__.r(__webpack_exports__);\\n/* harmony export */ __webpack_require__.d(__webpack_exports__... [truncated]"
+          },
+          "_document.js": {
+            "path": ".next/server/pages/_document.js",
+            "size": 2082,
+            "preview": "\"use strict\";\n/*\n * ATTENTION: An \"eval-source-map\" devtool has been used.\n * This devtool is neither made for production nor for readable output files.\n * It uses \"eval()\" calls to create a separate source file with attached SourceMaps in the browser devtools.\n * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)\n * or disable the default devtool with \"devtool: false\".\n * If you are looking for production-ready output files, see mode: \"production\" (https://webpack.js.org/configuration/mode/).\n */\n(() => {\nvar exports = {};\nexports.id = \"pages/_document\";\nexports.ids = [\"pages/_document\"];\nexports.modules = {\n\n/***/ \"next/dist/compiled/next-server/pages.runtime.dev.js\":\n/*!**********************************************************************!*\\\n  !*** external \"next/dist/compiled/next-server/pages.runtime.dev.js\" ***!\n  \\**********************************************************************/\n/***/ ((module) => {\n\nmodul... [truncated]"
+          },
+          "_error.js": {
+            "path": ".next/server/pages/_error.js",
+            "size": 22270,
+            "preview": "/*\n * ATTENTION: An \"eval-source-map\" devtool has been used.\n * This devtool is neither made for production nor for readable output files.\n * It uses \"eval()\" calls to create a separate source file with attached SourceMaps in the browser devtools.\n * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)\n * or disable the default devtool with \"devtool: false\".\n * If you are looking for production-ready output files, see mode: \"production\" (https://webpack.js.org/configuration/mode/).\n */\n(() => {\nvar exports = {};\nexports.id = \"pages/_error\";\nexports.ids = [\"pages/_error\"];\nexports.modules = {\n\n/***/ \"./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2F_error&preferredRegion=&absolutePagePath=private-next-pages%2F_error&absoluteAppPath=private-next-pages%2F_app&absoluteDocumentPath=private-next-pages%2F_document&middlewareConfigBase64=e30%3D!\":\n/*!************************************... [truncated]"
+          },
+          "index.js": {
+            "path": ".next/server/pages/index.js",
+            "size": 530205
+          }
+        },
+        "pages-manifest.json": {
+          "path": ".next/server/pages-manifest.json",
+          "size": 125,
+          "preview": "{\n  \"/_app\": \"pages/_app.js\",\n  \"/_error\": \"pages/_error.js\",\n  \"/_document\": \"pages/_document.js\",\n  \"/\": \"pages/index.js\"\n}"
+        },
+        "vendor-chunks": {
+          "@swc.js": {
+            "path": ".next/server/vendor-chunks/@swc.js",
+            "size": 6400,
+            "preview": "\"use strict\";\n/*\n * ATTENTION: An \"eval-source-map\" devtool has been used.\n * This devtool is neither made for production nor for readable output files.\n * It uses \"eval()\" calls to create a separate source file with attached SourceMaps in the browser devtools.\n * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)\n * or disable the default devtool with \"devtool: false\".\n * If you are looking for production-ready output files, see mode: \"production\" (https://webpack.js.org/configuration/mode/).\n */\nexports.id = \"vendor-chunks/@swc\";\nexports.ids = [\"vendor-chunks/@swc\"];\nexports.modules = {\n\n/***/ \"./node_modules/@swc/helpers/cjs/_interop_require_default.cjs\":\n/*!********************************************************************!*\\\n  !*** ./node_modules/@swc/helpers/cjs/_interop_require_default.cjs ***!\n  \\********************************************************************/\n/***/ ((__unused_webpack_module, exports) => ... [truncated]"
+          },
+          "aos.js": {
+            "path": ".next/server/vendor-chunks/aos.js",
+            "size": 855,
+            "preview": "/*\n * ATTENTION: An \"eval-source-map\" devtool has been used.\n * This devtool is neither made for production nor for readable output files.\n * It uses \"eval()\" calls to create a separate source file with attached SourceMaps in the browser devtools.\n * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)\n * or disable the default devtool with \"devtool: false\".\n * If you are looking for production-ready output files, see mode: \"production\" (https://webpack.js.org/configuration/mode/).\n */\nexports.id = \"vendor-chunks/aos\";\nexports.ids = [\"vendor-chunks/aos\"];\nexports.modules = {\n\n/***/ \"./node_modules/aos/dist/aos.css\":\n/*!***************************************!*\\\n  !*** ./node_modules/aos/dist/aos.css ***!\n  \\***************************************/\n/***/ (() => {\n\n\n\n/***/ })\n\n};\n;"
+          },
+          "next.js": {
+            "path": ".next/server/vendor-chunks/next.js",
+            "size": 391606
+          }
+        },
+        "webpack-runtime.js": {
+          "path": ".next/server/webpack-runtime.js",
+          "size": 9546,
+          "preview": "/*\n * ATTENTION: An \"eval-source-map\" devtool has been used.\n * This devtool is neither made for production nor for readable output files.\n * It uses \"eval()\" calls to create a separate source file with attached SourceMaps in the browser devtools.\n * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)\n * or disable the default devtool with \"devtool: false\".\n * If you are looking for production-ready output files, see mode: \"production\" (https://webpack.js.org/configuration/mode/).\n */\n/******/ (() => { // webpackBootstrap\n/******/ \t\"use strict\";\n/******/ \tvar __webpack_modules__ = ({});\n/************************************************************************/\n/******/ \t// The module cache\n/******/ \tvar __webpack_module_cache__ = {};\n/******/ \t\n/******/ \t// The require function\n/******/ \tfunction __webpack_require__(moduleId) {\n/******/ \t\t// Check if module is in cache\n/******/ \t\tvar cachedModule = __webpack_module_cache... [truncated]"
+        }
+      },
+      "static": {
+        "chunks": {
+          "main.js": {
+            "path": ".next/static/chunks/main.js",
+            "size": 5052428
+          },
+          "pages": {
+            "_app.js": {
+              "path": ".next/static/chunks/pages/_app.js",
+              "size": 604197
+            },
+            "_error.js": {
+              "path": ".next/static/chunks/pages/_error.js",
+              "size": 3388,
+              "preview": "/*\n * ATTENTION: An \"eval-source-map\" devtool has been used.\n * This devtool is neither made for production nor for readable output files.\n * It uses \"eval()\" calls to create a separate source file with attached SourceMaps in the browser devtools.\n * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)\n * or disable the default devtool with \"devtool: false\".\n * If you are looking for production-ready output files, see mode: \"production\" (https://webpack.js.org/configuration/mode/).\n */\n(self[\"webpackChunk_N_E\"] = self[\"webpackChunk_N_E\"] || []).push([[\"pages/_error\"],{\n\n/***/ \"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=private-next-pages%2F_error&page=%2F_error!\":\n/*!***********************************************************************************************************************************************!*\\\n  !*** ./node_modules/next/dist/build/webpack/loaders/next-clie... [truncated]"
+            },
+            "index.js": {
+              "path": ".next/static/chunks/pages/index.js",
+              "size": 5161663
+            }
+          },
+          "polyfills.js": {
+            "path": ".next/static/chunks/polyfills.js",
+            "size": 112594
+          },
+          "react-refresh.js": {
+            "path": ".next/static/chunks/react-refresh.js",
+            "size": 78963,
+            "preview": "// runtime can't be in strict mode because a global variable is assign and maybe created.\n/*\n * ATTENTION: An \"eval-source-map\" devtool has been used.\n * This devtool is neither made for production nor for readable output files.\n * It uses \"eval()\" calls to create a separate source file with attached SourceMaps in the browser devtools.\n * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)\n * or disable the default devtool with \"devtool: false\".\n * If you are looking for production-ready output files, see mode: \"production\" (https://webpack.js.org/configuration/mode/).\n */\n(self[\"webpackChunk_N_E\"] = self[\"webpackChunk_N_E\"] || []).push([[\"react-refresh\"],{\n\n/***/ \"./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js\":\n/*!********************************************************************************************!*\\\n  !*** ./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/in... [truncated]"
+          },
+          "webpack.js": {
+            "path": ".next/static/chunks/webpack.js",
+            "size": 47755,
+            "preview": "/*\n * ATTENTION: An \"eval-source-map\" devtool has been used.\n * This devtool is neither made for production nor for readable output files.\n * It uses \"eval()\" calls to create a separate source file with attached SourceMaps in the browser devtools.\n * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)\n * or disable the default devtool with \"devtool: false\".\n * If you are looking for production-ready output files, see mode: \"production\" (https://webpack.js.org/configuration/mode/).\n */\n/******/ (function() { // webpackBootstrap\n/******/ \t\"use strict\";\n/******/ \tvar __webpack_modules__ = ({});\n/************************************************************************/\n/******/ \t// The module cache\n/******/ \tvar __webpack_module_cache__ = {};\n/******/ \t\n/******/ \t// The require function\n/******/ \tfunction __webpack_require__(moduleId) {\n/******/ \t\t// Check if module is in cache\n/******/ \t\tvar cachedModule = __webpack_module_... [truncated]"
+          }
+        },
+        "development": {
+          "_ssgManifest.js": {
+            "path": ".next/static/development/_ssgManifest.js",
+            "size": 76,
+            "preview": "self.__SSG_MANIFEST=new Set;self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()"
+          }
+        },
+        "webpack": {
+          "633457081244afec._.hot-update.json": {
+            "path": ".next/static/webpack/633457081244afec._.hot-update.json",
+            "size": 22,
+            "preview": "{\"c\":[],\"r\":[],\"m\":[]}"
+          }
+        }
+      },
+      "trace": {
+        "path": ".next/trace",
+        "size": 41165,
+        "preview": "[{\"name\":\"hot-reloader\",\"duration\":49,\"timestamp\":920145760,\"id\":3,\"tags\":{\"version\":\"14.2.28\",\"isTurbopack\":false},\"startTime\":1746083867151,\"traceId\":\"484e0b14de4f5591\"},{\"name\":\"start\",\"duration\":2,\"timestamp\":920146544,\"id\":4,\"parentId\":3,\"tags\":{},\"startTime\":1746083867152,\"traceId\":\"484e0b14de4f5591\"},{\"name\":\"get-version-info\",\"duration\":376776,\"timestamp\":920146663,\"id\":5,\"parentId\":4,\"tags\":{},\"startTime\":1746083867152,\"traceId\":\"484e0b14de4f5591\"},{\"name\":\"clean\",\"duration\":12381,\"timestamp\":920523513,\"id\":6,\"parentId\":4,\"tags\":{},\"startTime\":1746083867529,\"traceId\":\"484e0b14de4f5591\"},{\"name\":\"get-page-paths\",\"duration\":1077,\"timestamp\":920537337,\"id\":8,\"parentId\":7,\"tags\":{},\"startTime\":1746083867543,\"traceId\":\"484e0b14de4f5591\"},{\"name\":\"create-pages-mapping\",\"duration\":462,\"timestamp\":920538449,\"id\":9,\"parentId\":7,\"tags\":{},\"startTime\":1746083867544,\"traceId\":\"484e0b14de4f5591\"},{\"name\":\"create-entrypoints\",\"duration\":3674,\"timestamp\":920538935,\"id\":10,\"parentId\":7,\"tags\"... [truncated]"
+      }
+    },
+    "README.md": {
+      "path": "README.md",
+      "size": 3290,
+      "preview": "# National No-Ads Day\n\n\uc774 \ud504\ub85c\uc81d\ud2b8\ub294 National No-Ads Day (9\uc6d4 15\uc77c)\ub97c \uc704\ud55c \uc6f9\uc0ac\uc774\ud2b8\uc785\ub2c8\ub2e4.\n\n## \uc8fc\uc694 \uae30\ub2a5\n- \ub79c\ub529\ud558\ub294 \ud0d1 \ud398\uc774\uc9c0\uc5d0 \uc9d1\uc911, \ud654\ub824\ud55c \uc560\ub2c8\uba54\uc774\uc158 \n- \uad00\uc0c1\uc6a9 \ud55c \ud398\uc774\uc9c0 \uc6f9\uc0ac\uc774\ud2b8\ub85c \ud544\uc218 \ubc84\ud2bc\uacfc \uc0c1\ud638\uc791\uc6a9\ub9cc \ud3ec\ud568\n- \ubc30\uacbd\uc744 \ub2f4\ub2f9\ud560 \uc774\ubbf8\uc9c0 \uc0ac\uc6a9\n- \ud654\ub824\ud558\uc9c0\ub9cc \uae54\ub054\ud558\uace0 \ubaa8\ub358\ud574 \ubcf4\uc774\ub294 \uce74\ub4dc \ubc29\uc2dd, \ubaa8\ubc14\uc77c\uc5d0\uc11c \uc0ac\uc6a9 \uac00\ub2a5\ud558\uac8c \uc870\uc815\n- \uc2ec\ud50c\ud574\ubcf4\uc774\uc9c0\ub9cc \ud654\ub824\ud55c \uc560\ub2c8\ub9e4\uc774\uc158\uacfc \uce74\uc6b4\ud305 \ub4f1\n- \uc774\ubbf8\uc9c0\ub97c AI\ub85c gif\ub85c \uc0ac\uc6a9\ud558\ub294 \ubc29\uc2dd\ub3c4 \uace0\ub824\n\n## \uae30\uc220 \uc2a4\ud0dd\n- Next.js\n- TypeScript\n- Tailwind CSS\n- GSAP (\uc560\ub2c8\uba54\uc774\uc158)\n- Chart.js (\ub370\uc774\ud130 \uc2dc\uac01\ud654)\n- Framer Motion (UI \uc560\ub2c8\uba54\uc774\uc158)\n\n## \uc124\uce58 \ubc0f \uc2e4\ud589 \ubc29\ubc95\n\n```bash\n# \uc758\uc874\uc131 \uc124\uce58\nnpm install\n\n# \uac1c\ubc1c \uc11c\ubc84 \uc2e4\ud589\nnpm run dev\n\n# \ud504\ub85c\ub355\uc158 \ube4c\ub4dc\nnpm run build\n\n# \ud504\ub85c\ub355\uc158 \uc11c\ubc84 \uc2e4\ud589\nnpm start\n```\n\n## \ud504\ub85c\uc81d\ud2b8 \uad6c\uc870\n- `/public` - \uc815\uc801 \ud30c\uc77c (\uc774\ubbf8\uc9c0, \uc544\uc774\ucf58 \ub4f1)\n- `/src/pages` - \ud398\uc774\uc9c0 \ucef4\ud3ec\ub10c\ud2b8\n- `/src/components` - \uc7ac\uc0ac\uc6a9 \uac00\ub2a5\ud55c \ucef4\ud3ec\ub10c\ud2b8\n- `/src/styles` - \uae00\ub85c\ubc8c \uc2a4\ud0c0\uc77c\n\n\n\nread the file structure first, ask before action just read it\n\nthese are the additional files, I have finished building the wedbsite and I I need some modifications, so do not change anything unless i say so\n\nread the files before modification and I like the exact same style as rest of the website when you generate something so please read the files first ok?\n\nI woul... [truncated]"
+    },
+    "basePrompt.md": {
+      "path": "basePrompt.md",
+      "size": 30976,
+      "preview": "Detailed AI Developer Prompt for National No-Ads Day Website Development\nInitial Setup Instructions\n\n## Code\n\nI'm developing a National No-Ads Day website. This is a frontend-only project using HTML, CSS, JavaScript with Bootstrap 5, GSAP animations, and data visualizations. Please help me build this step-by-step.\n\nBefore providing solutions:\n- Check project-structure.json to understand the project state\n- Review relevant existing files to maintain consistency\n- Focus on manageable code chunks to avoid token limits\n- Provide detailed comments in the code\n\nLet's proceed with the specific component I'm working on now.\nPhase 1: Homepage Development - Step by Step Guide\nStep 1: Hero Section Development\nCode\nI'm working on the hero section of the National No-Ads Day homepage. Please help me enhance this section with:\n\n1. A striking headline animation where \"National No-Ads Day\" appears with a typing effect (using GSAP)\n2. A visual that shows ad icons fading away (using SVG + GSAP)\n3. A coun... [truncated]"
+    },
+    "copilot_complete_workflow.md": {
+      "path": "copilot_complete_workflow.md",
+      "size": 14232,
+      "preview": "# GitHub Copilot Session Management System\n\n## Overview\nThis document provides a complete system for maintaining consistency across GitHub Copilot edit sessions. It includes tools for project scanning, style guides, session tracking, and usage instructions.\n\nCurrent Date: 2025-04-27\nUsername: tomzinchoi\n\n## Table of Contents\n1. [Project Scanner Script](#1-project-scanner-script)\n2. [Style Guide Template](#2-style-guide-template)\n3. [Session Tracker Template](#3-session-tracker-template)\n4. [Usage Instructions](#4-usage-instructions)\n5. [Session Starter Template](#5-session-starter-template)\n6. [Automation Capabilities](#6-automation-capabilities)\n\n## 1. Project Scanner Script\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nProject Structure Scanner for GitHub Copilot Sessions\nCreates a JSON representation of your project structure to provide context to Copilot.\n\"\"\"\n\nimport os\nimport json\nimport time\nimport datetime\nimport re\nfrom pathlib import Path\n\n# Configuration - customize these values\nIGNO... [truncated]"
+    },
+    "copilot_project_scanner.py": {
+      "path": "copilot_project_scanner.py",
+      "size": 4603,
+      "preview": "#!/usr/bin/env python3\n\"\"\"\nProject Structure Scanner for GitHub Copilot Sessions\nCreates a JSON representation of your project structure to provide context to Copilot.\n\"\"\"\n# ...existing code from the script in your workflow doc...\nimport os\nimport json\nimport time\nimport datetime\nimport re\nfrom pathlib import Path\n\nIGNORE_PATTERNS = [\n    r'\\.git',\n    r'node_modules',\n    r'__pycache__',\n    r'\\.env',\n    r'\\.vscode',\n    r'\\.idea',\n    r'venv',\n    r'dist',\n    r'build',\n    r'\\.DS_Store'\n]\n\nMAX_FILE_PREVIEW_SIZE = 1000\nMAX_FILE_SIZE_TO_READ = 100000\nINCLUDE_FILE_CONTENT = True\n\ndef should_ignore(path):\n    for pattern in IGNORE_PATTERNS:\n        if re.search(pattern, path):\n            return True\n    return False\n\ndef scan_directory(root_dir='.', max_depth=None, current_depth=0):\n    if max_depth is not None and current_depth > max_depth:\n        return \"MAX_DEPTH_REACHED\"\n    result = {}\n    root_path = Path(root_dir)\n    try:\n        for item in sorted(root_path.iterdir()):\n     ... [truncated]"
+    },
+    "earthhourabout.md": {
+      "path": "earthhourabout.md",
+      "size": 3421,
+      "preview": "The Biggest Hour for Earth\nSince our beginnings in 2007, Earth Hour has been known for the \u201clights off\u201d moment, with individuals from around the globe switching off their lights to show symbolic support for the planet and to raise awareness of the environmental issues affecting it.\n\nMore than 15 years later, we are now at a tipping point with our climate and nature crises, putting at risk the fate of our one home and all our futures. We are on course to breach by 2030 the 1.5\u00b0C global temperature increase limit set by the Paris Climate Agreement, and nature - the source of our very livelihoods and one of our biggest allies against the climate crisis - is also under severe threat,  facing alarming and unprecedented rates of loss globally.\n\nThe next few years are therefore crucial to all our futures - we have to stay under the 1.5\u00b0C climate threshold to avoid irreversible damage to our planet, and we need to reverse nature loss by 2030, ending the decade with more nature than we started,... [truncated]"
+    },
+    "next-env.d.ts": {
+      "path": "next-env.d.ts",
+      "size": 230,
+      "preview": "/// <reference types=\"next\" />\n/// <reference types=\"next/image-types/global\" />\n\n// NOTE: This file should not be edited\n// see https://nextjs.org/docs/pages/building-your-application/configuring/typescript for more information.\n"
+    },
+    "package-lock.json": {
+      "path": "package-lock.json",
+      "size": 214571
+    },
+    "package.json": {
+      "path": "package.json",
+      "size": 794,
+      "preview": "{\n  \"name\": \"noadsday\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"next dev\",\n    \"build\": \"next build\",\n    \"start\": \"next start\",\n    \"lint\": \"next lint\"\n  },\n  \"dependencies\": {\n    \"@tailwindcss/typography\": \"^0.5.10\",\n    \"aos\": \"^2.3.4\",\n    \"autoprefixer\": \"^10.4.17\",\n    \"chart.js\": \"^4.4.1\",\n    \"framer-motion\": \"^11.0.3\",\n    \"gsap\": \"^3.12.5\",\n    \"next\": \"^14.1.0\",\n    \"postcss\": \"^8.4.35\",\n    \"react\": \"^18.2.0\",\n    \"react-chartjs-2\": \"^5.2.0\",\n    \"react-dom\": \"^18.2.0\",\n    \"tailwindcss\": \"^3.4.1\"\n  },\n  \"devDependencies\": {\n    \"@types/aos\": \"^3.0.7\",\n    \"@types/node\": \"^20.11.7\",\n    \"@types/react\": \"^18.2.48\",\n    \"@types/react-dom\": \"^18.2.18\",\n    \"eslint\": \"^8.56.0\",\n    \"eslint-config-next\": \"^14.1.0\",\n    \"typescript\": \"^5.3.3\"\n  }\n}\n"
+    },
+    "postcss.config.js": {
+      "path": "postcss.config.js",
+      "size": 82,
+      "preview": "module.exports = {\n  plugins: {\n    tailwindcss: {},\n    autoprefixer: {},\n  },\n}\n"
+    },
+    "public": {
+      "assets": {
+        "experts": {
+          "placeholder.txt": {
+            "path": "public/assets/experts/placeholder.txt",
+            "size": 218,
+            "preview": "This directory will contain expert profile photos.\nDefault images should be named:\n- catherine-price.jpg\n- adam-gazzaley.jpg\n- tim-wu.jpg\n\nUntil real images are sourced, the application will use fallback placeholders.\n"
+          }
+        },
+        "icons": {
+          "placeholder.txt": {
+            "path": "public/assets/icons/placeholder.txt",
+            "size": 56,
+            "preview": "This directory will contain icon files for the website.\n"
+          }
+        },
+        "images": {
+          "placeholder.txt": {
+            "path": "public/assets/images/placeholder.txt",
+            "size": 122,
+            "preview": "This directory will contain image files for the website, including the no-ads-day-gathering.jpg image for the About page.\n"
+          }
+        }
+      }
+    },
+    "src": {
+      "components": {
+        "CountdownTimer.tsx": {
+          "path": "src/components/CountdownTimer.tsx",
+          "size": 2025,
+          "preview": "import { useState, useEffect } from 'react'\n\ninterface TimeLeft {\n  days: number\n  hours: number\n  minutes: number\n  seconds: number\n}\n\ninterface CountdownTimerProps {\n  targetDate: Date\n}\n\nexport default function CountdownTimer({ targetDate }: CountdownTimerProps) {\n  const [timeLeft, setTimeLeft] = useState<TimeLeft>({\n    days: 0,\n    hours: 0,\n    minutes: 0,\n    seconds: 0\n  })\n\n  useEffect(() => {\n    const calculateTimeLeft = () => {\n      const difference = targetDate.getTime() - new Date().getTime()\n      \n      if (difference > 0) {\n        return {\n          days: Math.floor(difference / (1000 * 60 * 60 * 24)),\n          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),\n          minutes: Math.floor((difference / 1000 / 60) % 60),\n          seconds: Math.floor((difference / 1000) % 60)\n        }\n      }\n      \n      return {\n        days: 0,\n        hours: 0,\n        minutes: 0,\n        seconds: 0\n      }\n    }\n    \n    // Set the initial timeLeft\n    setTimeLeft(calc... [truncated]"
+        },
+        "CounterSection.tsx": {
+          "path": "src/components/CounterSection.tsx",
+          "size": 6725,
+          "preview": "import { useEffect, useRef, useState } from 'react'\nimport { gsap } from 'gsap'\nimport { ScrollTrigger } from 'gsap/dist/ScrollTrigger'\nimport { motion } from 'framer-motion'\n\n// Register GSAP plugins\nif (typeof window !== 'undefined') {\n  gsap.registerPlugin(ScrollTrigger)\n}\n\nconst adIcons = ['\ud83d\udcf1', '\ud83d\uded2', '\ud83d\udcfa', '\ud83d\udcbb', '\ud83c\udfae', '\ud83d\udce2', '\ud83d\udcb0', '\ud83d\udd14', '\ud83d\udcdd', '\ud83d\udcf0', '\ud83c\udfac', '\ud83d\udcc8']\n\nexport default function CounterSection() {\n  const sectionRef = useRef<HTMLDivElement>(null)\n  const counterRef = useRef<HTMLDivElement>(null)\n  const adIconsContainerRef = useRef<HTMLDivElement>(null)\n  const [counterComplete, setCounterComplete] = useState(false)\n  \n  useEffect(() => {\n    if (!counterRef.current || !adIconsContainerRef.current || !sectionRef.current) return\n    \n    const counter = counterRef.current\n    const adIconsContainer = adIconsContainerRef.current\n    \n    // Create animation context\n    const ctx = gsap.context(() => {\n      // Create ScrollTrigger for the counter animation\n      ScrollTrigger.create({\n    ... [truncated]"
+        },
+        "DayInLifeSection.tsx": {
+          "path": "src/components/DayInLifeSection.tsx",
+          "size": 16258,
+          "preview": "import { useState, useEffect, useRef } from 'react'\nimport { motion } from 'framer-motion'\nimport { gsap } from 'gsap'\nimport { ScrollTrigger } from 'gsap/dist/ScrollTrigger'\n\n// Register GSAP plugins\nif (typeof window !== 'undefined') {\n  gsap.registerPlugin(ScrollTrigger)\n}\n\n// Daily activities with ad exposure data - updated with research-based information\nconst dailyActivities = [\n  {\n    time: '06:00',\n    activity: 'Wake Up',\n    description: 'Check phone notifications',\n    adsWith: 35,\n    adsWithout: 0,\n    icon: '\ud83d\udecc'\n  },\n  {\n    time: '07:00',\n    activity: 'Morning Routine',\n    description: 'Social media while eating breakfast',\n    adsWith: 85,\n    adsWithout: 0,\n    icon: '\ud83c\udf73'\n  },\n  {\n    time: '08:30',\n    activity: 'Commute',\n    description: 'Podcasts, billboards, radio ads',\n    adsWith: 120,\n    adsWithout: 15,\n    icon: '\ud83d\ude97'\n  },\n  {\n    time: '09:30',\n    activity: 'Work AM',\n    description: 'Checking email, work websites, news',\n    adsWith: 250,\n    adsWithout: 3... [truncated]"
+        },
+        "ExpertQuotesSection.tsx": {
+          "path": "src/components/ExpertQuotesSection.tsx",
+          "size": 8170,
+          "preview": "import { useState, useEffect, useRef } from 'react'\nimport { motion, AnimatePresence } from 'framer-motion'\n\n// Expert quotes data with verified sources\nconst expertQuotes = [\n  {\n    id: 1,\n    quote: \"Today our attention has become the new economic resource being harvested. Protecting and managing it is essential to personal wellbeing.\",\n    author: \"Catherine Price\",\n    title: \"Science Journalist and Author of \\\"How to Break Up With Your Phone\\\"\",\n    source: \"Price, C. (2018). How to Break Up With Your Phone: The 30-Day Plan to Take Back Your Life.\"\n  },\n  {\n    id: 2,\n    quote: \"Constant digital interruptions force our brains to divide attention, making it difficult to engage in deep, sustained thought.\",\n    author: \"Dr. Adam Gazzaley\",\n    title: \"Neuroscientist and Author of \\\"The Distracted Mind\\\"\",\n    source: \"Gazzaley, A., & Rosen, L. (2016). The Distracted Mind: Ancient Brains in a High-Tech World.\"\n  },\n  {\n    id: 3,\n    quote: \"Companies are beginning to understand th... [truncated]"
+        },
+        "Footer.tsx": {
+          "path": "src/components/Footer.tsx",
+          "size": 8865,
+          "preview": "import { useState, useRef, useEffect } from 'react'\nimport { motion, AnimatePresence } from 'framer-motion'\nimport Link from 'next/link'\nimport { gsap } from 'gsap'\n\nexport default function Footer() {\n  const [email, setEmail] = useState('')\n  const [isSubmitted, setIsSubmitted] = useState(false)\n  const confettiRef = useRef<HTMLDivElement>(null)\n  \n  const handleSubmit = (e: React.FormEvent) => {\n    e.preventDefault()\n    \n    if (email.trim() === '') return\n    \n    // Show success message\n    setIsSubmitted(true)\n    \n    // Create confetti animation\n    if (confettiRef.current) {\n      createConfetti()\n    }\n    \n    // Reset form after delay\n    setTimeout(() => {\n      setEmail('')\n      setIsSubmitted(false)\n    }, 5000)\n  }\n  \n  const createConfetti = () => {\n    const container = confettiRef.current\n    if (!container) return\n    \n    // Clear previous confetti\n    container.innerHTML = ''\n    \n    const colors = ['#1a73e8', '#34a853', '#fa7b17', '#4285f4', '#fbbc05']\n    \n  ... [truncated]"
+        },
+        "Header.tsx": {
+          "path": "src/components/Header.tsx",
+          "size": 6303,
+          "preview": "import { useState, useEffect } from 'react'\nimport { motion, AnimatePresence } from 'framer-motion'\nimport Link from 'next/link'\n\nexport default function Header() {\n  const [isScrolled, setIsScrolled] = useState(false)\n  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)\n\n  useEffect(() => {\n    const handleScroll = () => {\n      setIsScrolled(window.scrollY > 50)\n    }\n    \n    window.addEventListener('scroll', handleScroll)\n    return () => window.removeEventListener('scroll', handleScroll)\n  }, [])\n\n  const handleLinkClick = () => {\n    setMobileMenuOpen(false)\n  }\n\n  return (\n    <header \n      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${\n        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'\n      }`}\n    >\n      <div className=\"container mx-auto px-4 flex justify-between items-center\">\n        <Link href=\"/\">\n          <motion.div \n            initial={{ opacity: 0, x: -20 }}\n            animate={{ opacity:... [truncated]"
+        },
+        "HeroSection.tsx": {
+          "path": "src/components/HeroSection.tsx",
+          "size": 8298,
+          "preview": "import { useEffect, useRef } from 'react'\nimport { gsap } from 'gsap'\nimport { TextPlugin } from 'gsap/dist/TextPlugin'\nimport { motion } from 'framer-motion'\nimport CountdownTimer from './CountdownTimer'\n\n// Register GSAP plugins\nif (typeof window !== 'undefined') {\n  gsap.registerPlugin(TextPlugin)\n}\n\nexport default function HeroSection() {\n  const headlineRef = useRef<HTMLHeadingElement>(null)\n  const sectionRef = useRef<HTMLDivElement>(null)\n  const adIconsRef = useRef<HTMLDivElement>(null)\n  \n  useEffect(() => {\n    // Typing effect for headline\n    if (headlineRef.current) {\n      const tl = gsap.timeline()\n      \n      tl.to(headlineRef.current, {\n        duration: 2,\n        text: \"National No-Ads Day\",\n        ease: \"power2.out\",\n        delay: 0.5\n      })\n    }\n    \n    // Fading ad icons animation - fixed to work properly\n    if (adIconsRef.current) {\n      const adIcons = adIconsRef.current.children\n      \n      // First reset all icons to invisible\n      gsap.set(adIcons,... [truncated]"
+        },
+        "ResourcesSection.tsx": {
+          "path": "src/components/ResourcesSection.tsx",
+          "size": 16427,
+          "preview": "import { useEffect, useRef, useState } from 'react'\nimport { motion, AnimatePresence } from 'framer-motion'\nimport { gsap } from 'gsap'\nimport { ScrollTrigger } from 'gsap/dist/ScrollTrigger'\n\n// Register GSAP plugins\nif (typeof window !== 'undefined') {\n  gsap.registerPlugin(ScrollTrigger)\n}\n\n// Resource categories\nconst categories = [\n  { id: 'all', label: 'All Resources' },\n  { id: 'books', label: 'Books' },\n  { id: 'articles', label: 'Articles & Reports' },\n  { id: 'research', label: 'Research' }\n]\n\n// Verified resource data with checked links\nconst resources = [\n  {\n    id: 1,\n    title: \"Stolen Focus: Why You Can't Pay Attention\",\n    author: \"Johann Hari\",\n    year: 2022,\n    category: \"books\",\n    description: \"Examines how our ability to focus has been stolen by powerful external forces, and offers strategies to reclaim our attention.\",\n    citation: \"Hari, J. (2022). Stolen Focus: Why You Can't Pay Attention\u2014and How to Think Deeply Again. Crown.\",\n    link: \"https://www.pengu... [truncated]"
+        },
+        "StatisticsSection.tsx": {
+          "path": "src/components/StatisticsSection.tsx",
+          "size": 10133,
+          "preview": "import { useEffect, useRef } from 'react'\nimport { Chart as ChartJS, CategoryScale, LinearScale, BarElement, ArcElement, Title, Tooltip, Legend } from 'chart.js'\nimport { Bar, Pie } from 'react-chartjs-2'\nimport { motion } from 'framer-motion'\n\n// Register Chart.js components\nChartJS.register(CategoryScale, LinearScale, BarElement, ArcElement, Title, Tooltip, Legend)\n\nexport default function StatisticsSection() {\n  const sectionRef = useRef<HTMLDivElement>(null)\n  \n  // Bar chart data - Daily Ad Exposure by Medium\n  const barChartData = {\n    labels: ['Social Media', 'Television', 'Websites', 'Mobile Apps', 'Other'],\n    datasets: [\n      {\n        label: 'Number of Ads',\n        data: [2000, 1000, 800, 700, 500],\n        backgroundColor: [\n          'rgba(26, 115, 232, 0.8)',\n          'rgba(52, 168, 83, 0.8)',\n          'rgba(250, 123, 23, 0.8)',\n          'rgba(26, 115, 232, 0.6)',\n          'rgba(52, 168, 83, 0.6)',\n        ],\n        borderColor: [\n          'rgba(26, 115, 232, 1)... [truncated]"
+        },
+        "ValuePropositionSection.tsx": {
+          "path": "src/components/ValuePropositionSection.tsx",
+          "size": 6296,
+          "preview": "import { useEffect, useRef } from 'react'\nimport { gsap } from 'gsap'\nimport { ScrollTrigger } from 'gsap/dist/ScrollTrigger'\nimport { motion } from 'framer-motion'\n\n// Register GSAP plugins\nif (typeof window !== 'undefined') {\n  gsap.registerPlugin(ScrollTrigger)\n}\n\nexport default function ValuePropositionSection() {\n  const sectionRef = useRef<HTMLDivElement>(null)\n\n  useEffect(() => {\n    if (!sectionRef.current) return\n    \n    const ctx = gsap.context(() => {\n      // Animate benefits cards on scroll\n      gsap.utils.toArray('.benefit-card').forEach((card: any, i) => {\n        gsap.fromTo(card,\n          { y: 50, opacity: 0 },\n          { \n            y: 0, \n            opacity: 1, \n            duration: 0.8,\n            delay: i * 0.1,\n            ease: \"power3.out\",\n            scrollTrigger: {\n              trigger: card,\n              start: \"top 85%\",\n              toggleActions: \"play none none none\"\n            }\n          }\n        )\n      })\n    }, sectionRef)\n    \n    re... [truncated]"
+        },
+        "WhyNoAdsSection.tsx": {
+          "path": "src/components/WhyNoAdsSection.tsx",
+          "size": 10494,
+          "preview": "import { useEffect, useRef } from 'react'\nimport { gsap } from 'gsap'\nimport { ScrollTrigger } from 'gsap/dist/ScrollTrigger'\nimport { motion } from 'framer-motion'\n\n// Register GSAP plugins\nif (typeof window !== 'undefined') {\n  gsap.registerPlugin(ScrollTrigger)\n}\n\n// SVG Brain Animation Component\nfunction BrainAnimation() {\n  const brainRef = useRef<SVGSVGElement>(null)\n  \n  useEffect(() => {\n    if (!brainRef.current) return\n    \n    const brain = brainRef.current\n    const regions = brain.querySelectorAll('.brain-region')\n    const connections = brain.querySelectorAll('.connection')\n    \n    // Initialize regions and connections\n    gsap.set(regions, { opacity: 0.3, fill: '#cccccc' })\n    gsap.set(connections, { opacity: 0, strokeDasharray: '5 5', strokeDashoffset: 10 })\n    \n    // Create animation context\n    const ctx = gsap.context(() => {\n      // Create brain activation animation\n      ScrollTrigger.create({\n        trigger: brain,\n        start: \"top 70%\",\n        onEnter: ... [truncated]"
+        }
+      },
+      "pages": {
+        "_app.tsx": {
+          "path": "src/pages/_app.tsx",
+          "size": 826,
+          "preview": "import '@/styles/globals.css'\nimport { useEffect } from 'react'\nimport type { AppProps } from 'next/app'\nimport Head from 'next/head'\nimport AOS from 'aos'\nimport 'aos/dist/aos.css'\n\nexport default function App({ Component, pageProps }: AppProps) {\n  useEffect(() => {\n    // Initialize AOS animation library\n    AOS.init({\n      duration: 800,\n      once: false,\n      mirror: true,\n    })\n  }, [])\n\n  return (\n    <>\n      <Head>\n        <title>National No-Ads Day - September 15th</title>\n        <meta name=\"description\" content=\"Join National No-Ads Day on September 15th and experience a day without advertising distractions.\" />\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n        <link rel=\"icon\" href=\"/favicon.ico\" />\n      </Head>\n      <Component {...pageProps} />\n    </>\n  )\n}\n"
+        },
+        "about.tsx": {
+          "path": "src/pages/about.tsx",
+          "size": 9918,
+          "preview": "import { useEffect, useRef } from 'react'\nimport { gsap } from 'gsap'\nimport { ScrollTrigger } from 'gsap/dist/ScrollTrigger'\nimport Head from 'next/head'\nimport Image from 'next/image'\nimport { motion } from 'framer-motion'\n\nimport Header from '@/components/Header'\nimport Footer from '@/components/Footer'\n\n// Register GSAP plugins\nif (typeof window !== 'undefined') {\n  gsap.registerPlugin(ScrollTrigger)\n}\n\nexport default function AboutPage() {\n  const pageRef = useRef<HTMLDivElement>(null)\n\n  useEffect(() => {\n    // Set up page animations\n    const ctx = gsap.context(() => {\n      // Animation setup specific to this page\n    }, pageRef)\n\n    return () => ctx.revert()\n  }, [])\n\n  return (\n    <>\n      <Head>\n        <title>About National No-Ads Day | September 15</title>\n        <meta name=\"description\" content=\"Learn about National No-Ads Day, a movement to reclaim your attention and experience a day without advertising distractions.\" />\n      </Head>\n      \n      <div ref={pageRef} ... [truncated]"
+        },
+        "index.tsx": {
+          "path": "src/pages/index.tsx",
+          "size": 1888,
+          "preview": "import { useEffect, useRef } from 'react'\nimport { gsap } from 'gsap'\nimport { ScrollTrigger } from 'gsap/dist/ScrollTrigger'\nimport { TextPlugin } from 'gsap/dist/TextPlugin'\n\nimport Header from '@/components/Header'\nimport HeroSection from '@/components/HeroSection'\nimport CounterSection from '@/components/CounterSection'\nimport StatisticsSection from '@/components/StatisticsSection'\nimport ValuePropositionSection from '@/components/ValuePropositionSection'\nimport WhyNoAdsSection from '@/components/WhyNoAdsSection'\nimport ExpertQuotesSection from '@/components/ExpertQuotesSection'\nimport DayInLifeSection from '@/components/DayInLifeSection'\nimport Footer from '@/components/Footer'\n\n// Register GSAP plugins\nif (typeof window !== 'undefined') {\n  gsap.registerPlugin(ScrollTrigger, TextPlugin)\n}\n\nexport default function Home() {\n  const mainRef = useRef<HTMLDivElement>(null)\n\n  useEffect(() => {\n    // Setup animations that require the DOM to be loaded\n    const ctx = gsap.context(() =>... [truncated]"
+        },
+        "resources.tsx": {
+          "path": "src/pages/resources.tsx",
+          "size": 3840,
+          "preview": "import { useEffect, useRef } from 'react'\nimport { gsap } from 'gsap'\nimport { ScrollTrigger } from 'gsap/dist/ScrollTrigger'\nimport Head from 'next/head'\n\nimport Header from '@/components/Header'\nimport ResourcesSection from '@/components/ResourcesSection'\nimport Footer from '@/components/Footer'\n\n// Register GSAP plugins\nif (typeof window !== 'undefined') {\n  gsap.registerPlugin(ScrollTrigger)\n}\n\nexport default function ResourcesPage() {\n  const pageRef = useRef<HTMLDivElement>(null)\n\n  useEffect(() => {\n    // Set up page animations\n    const ctx = gsap.context(() => {\n      // Animation setup specific to this page\n    }, pageRef)\n\n    return () => ctx.revert()\n  }, [])\n\n  return (\n    <>\n      <Head>\n        <title>Resources & References | National No-Ads Day</title>\n        <meta name=\"description\" content=\"Explore books, studies, articles and statistics about advertising's impact on attention and digital wellbeing.\" />\n      </Head>\n      \n      <div ref={pageRef} className=\"min-... [truncated]"
+        },
+        "why-no-ads.tsx": {
+          "path": "src/pages/why-no-ads.tsx",
+          "size": 2472,
+          "preview": "import { useEffect, useRef } from 'react'\nimport { gsap } from 'gsap'\nimport { ScrollTrigger } from 'gsap/dist/ScrollTrigger'\nimport Head from 'next/head'\n\nimport Header from '@/components/Header'\nimport WhyNoAdsSection from '@/components/WhyNoAdsSection'\nimport ExpertQuotesSection from '@/components/ExpertQuotesSection'\nimport DayInLifeSection from '@/components/DayInLifeSection'\nimport Footer from '@/components/Footer'\n\n// Register GSAP plugins\nif (typeof window !== 'undefined') {\n  gsap.registerPlugin(ScrollTrigger)\n}\n\nexport default function WhyNoAdsPage() {\n  const pageRef = useRef<HTMLDivElement>(null)\n\n  useEffect(() => {\n    // Set up page animations\n    const ctx = gsap.context(() => {\n      // Animation setup specific to this page\n    }, pageRef)\n\n    return () => ctx.revert()\n  }, [])\n\n  return (\n    <>\n      <Head>\n        <title>Why No Ads? | National No-Ads Day</title>\n        <meta name=\"description\" content=\"Learn about the impact of advertising on attention and why we ... [truncated]"
+        }
+      },
+      "styles": {
+        "globals.css": {
+          "path": "src/styles/globals.css",
+          "size": 1798,
+          "preview": "@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');\n\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n:root {\n  --primary: #1a73e8;\n  --secondary: #34a853;\n  --accent: #fa7b17;\n  --light: #f8f9fa;\n  --dark: #202124;\n}\n\nhtml {\n  scroll-behavior: smooth;\n}\n\nbody {\n  color: var(--dark);\n  background-color: var(--light);\n  font-family: 'Open Sans', sans-serif;\n  overflow-x: hidden;\n}\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Montserrat', sans-serif;\n  font-weight: 700;\n}\n\n.gradient-text {\n  background: linear-gradient(90deg, var(--primary), var(--secondary));\n  -webkit-background-clip: text;\n  background-clip: text;\n  color: transparent;\n}\n\n.gradient-bg {\n  background: linear-gradient(to right, var(--primary), var(--secondary));\n}\n\n.section-padding {\n  padding: 80px 0;\n}\n\n@media (max-width: 768px) {\n  .section-padding {\n    padding: 40px 0;\n  }\n}\n\n/* Animation Classes */\n.reveal-up {\n... [truncated]"
+        }
+      },
+      "types": {
+        "declaration.d.ts": {
+          "path": "src/types/declaration.d.ts",
+          "size": 22,
+          "preview": "declare module 'aos';\n"
+        }
+      }
+    },
+    "tailwind.config.js": {
+      "path": "tailwind.config.js",
+      "size": 981,
+      "preview": "/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  content: [\n    \"./src/pages/**/*.{js,ts,jsx,tsx,mdx}\",\n    \"./src/components/**/*.{js,ts,jsx,tsx,mdx}\",\n    \"./src/app/**/*.{js,ts,jsx,tsx,mdx}\",\n  ],\n  theme: {\n    extend: {\n      colors: {\n        primary: \"#1a73e8\",\n        secondary: \"#34a853\",\n        accent: \"#fa7b17\",\n        light: \"#f8f9fa\",\n        dark: \"#202124\",\n      },\n      fontFamily: {\n        sans: [\"Open Sans\", \"sans-serif\"],\n        heading: [\"Montserrat\", \"sans-serif\"],\n      },\n      keyframes: {\n        float: {\n          '0%, 100%': { transform: 'translateY(0)' },\n          '50%': { transform: 'translateY(-10px)' },\n        },\n        pulse: {\n          '0%, 100%': { opacity: 1 },\n          '50%': { opacity: 0.7 },\n        },\n      },\n      animation: {\n        float: 'float 6s ease-in-out infinite',\n        pulse: 'pulse 2s ease-in-out infinite',\n      },\n    },\n  },\n  plugins: [\n    require('@tailwindcss/typography'),\n  ],\n}\n"
+    },
+    "tsconfig.json": {
+      "path": "tsconfig.json",
+      "size": 599,
+      "preview": "{\n  \"compilerOptions\": {\n    \"target\": \"es5\",\n    \"lib\": [\"dom\", \"dom.iterable\", \"esnext\"],\n    \"allowJs\": true,\n    \"skipLibCheck\": true,\n    \"strict\": true,\n    \"noEmit\": true,\n    \"esModuleInterop\": true,\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"bundler\",\n    \"resolveJsonModule\": true,\n    \"isolatedModules\": true,\n    \"jsx\": \"preserve\",\n    \"incremental\": true,\n    \"plugins\": [\n      {\n        \"name\": \"next\"\n      }\n    ],\n    \"paths\": {\n      \"@/*\": [\"./src/*\"]\n    }\n  },\n  \"include\": [\"next-env.d.ts\", \"**/*.ts\", \"**/*.tsx\", \".next/types/**/*.ts\"],\n  \"exclude\": [\"node_modules\"]\n}\n"
+    }
+  },
+  "git": {
+    "branch": "main",
+    "recent_commits": [
+      "ed0c9af - first commit (18 hours ago)",
+      "fc32b6a - Initial commit (4 days ago)"
+    ]
+  }
+}

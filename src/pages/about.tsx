@@ -53,29 +53,78 @@ export default function AboutPage() {
             <div className="max-w-3xl mx-auto">
               {/* Introduction */}
               <div className="prose prose-lg mx-auto mb-12">
-                <h2 className="text-3xl font-heading font-bold gradient-text mb-6">The Attention Revolution</h2>
+                <h2 className="text-3xl font-heading font-bold gradient-text mb-6">Why National No-Ads Day?</h2>
                 
                 <p className="text-xl leading-relaxed mb-6">
-                  Since establishing National No-Ads Day in 2023, our movement has been known for the "notifications off" moment, with individuals from around the globe disconnecting from advertising to show symbolic support for mental wellbeing and to raise awareness of the attention crisis affecting our society.
+                  Every day, we are surrounded by a torrent of advertising—on our phones, in our feeds, on the streets, and even in the palm of our hands. The average city dweller sees between 4,000 and 10,000 ads daily. With so much of our attention captured, it's no wonder that many of us feel mentally fatigued, distracted, and disconnected from the present moment.
                 </p>
                 
                 <p className="text-lg leading-relaxed mb-8">
-                  More than just a day, National No-Ads Day has evolved into a powerful reminder that our attention is precious. In today's hyper-connected digital landscape, we are now at a tipping point with our attention and mental wellbeing crises, putting at risk our cognitive health and our collective future.
+                  National No-Ads Day is a global movement dedicated to reclaiming our focus, restoring our well-being, and reimagining the relationship between people, media, and brands. By stepping away from ads for just one day, we take a meaningful pause—a digital detox for our minds and a wake-up call for our attention.
                 </p>
-                
+                <div className="text-lg text-dark/70 leading-relaxed mt-15 mb-15 mr-20 ml-20 text-center">
+                <p className="italic mb-2">
+                  "Our attention has become a precious resource—protecting it is essential to our well-being."
+                </p>
+                <p className="text-sm text-dark/70 font-medium">
+                  — Katherine Price, Director of Digital Wellness Institute
+                </p>
+                </div>
+
                 {/* Featured Image */}
-                <div className="my-12 rounded-xl overflow-hidden shadow-lg">
+                <div className="my-12 rounded-xl overflow-hidden">
                   <Image 
-                    src="/workspaces/noadsday/public/assets/images/no-ads-day-gathering.jpg" 
-                    alt="People enjoying quality time without digital distractions" 
+                    src="/assets/images/Nationalnoadsday.png" 
+                    alt="National No-Ads Day" 
                     width={1200} 
                     height={800}
                     className="w-full h-auto"
                   />
-                  <p className="text-sm text-dark/60 italic mt-2 text-center">
-                    People reconnecting with meaningful activities during National No-Ads Day
-                  </p>
+
                 </div>
+                
+
+                <h2 className="text-3xl font-heading font-bold gradient-text mb-6">The Attention Revolution</h2>
+                
+                <p className="text-xl leading-relaxed mb-6">
+                  Constant exposure to advertising and information overload impacts our lives in profound ways—reducing concentration, increasing stress, and even affecting our sleep and decision-making. Research from Harvard Business Review and the American Psychological Association links digital fatigue to diminished productivity, heightened anxiety, and a decline in cognitive health.
+                </p>
+                
+                <p className="text-lg leading-relaxed mb-8">
+                  But there’s another way. National No-Ads Day is an invitation to experience a quieter, more mindful world. It’s a chance to rediscover what it feels like to read a book undisturbed, share a meal without notifications, or walk outside and truly notice your surroundings.
+                </p>
+                
+                <p className="text-lg leading-relaxed mb-8">
+                  This day is more than a break—it's a rallying point for a new kind of digital culture, where attention is valued, and both people and businesses thrive by building real, trust-based connections.
+                </p>
+
+                <div className="text-lg text-dark/70 leading-relaxed mt-15 mb-15 mr-20 ml-20 text-center">
+                <p className="italic mb-2">
+                  “Relentless advertising steals the mental rest we need for creativity and deep thought.”
+                </p>
+                <p className="text-sm text-dark/70 font-medium">
+                  — Michael Goldman, Neuroscientist
+                </p>
+                </div>
+
+                {/* YouTube Video */}
+                <h2 className="text-3xl font-heading font-bold mb-6 gradient-text">The Science of Attention</h2>
+                
+                <div className="aspect-w-16 aspect-h-9 mb-8">
+                  <iframe 
+                    className="w-full h-96 rounded-xl shadow-md"
+                    src="https://www.youtube.com/embed/kNOX7a7-kwQ" 
+                    title="The Attention Crisis | Johann Hari" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                
+                <p className="text-sm text-dark/60 italic mb-8 text-center">
+                  Johann Hari discusses the attention crisis in modern society
+                </p>
+                
                 
                 <h2 className="text-3xl font-heading font-bold mb-6 gradient-text">Why We Need a Day Without Ads</h2>
                 
@@ -93,68 +142,16 @@ export default function AboutPage() {
                     Humanity is facing twin crises of diminishing attention spans and rising digital fatigue. Research shows that digital interruptions cost us 23 minutes of recovery time for each distraction, while constant connectivity is linked to rising anxiety and reduced deep thinking. The attention economy threatens our cognitive abilities, but we are not past the point of no return. Now, more than ever, National No-Ads Day serves as a beacon of positivity and inspiration—a reminder of the power we still hold over our attention.
                   </p>
                 </div>
-                
-                {/* YouTube Video */}
-                <h2 className="text-3xl font-heading font-bold mb-6 gradient-text">The Science of Attention</h2>
-                
-                <div className="aspect-w-16 aspect-h-9 mb-8">
-                  <iframe 
-                    className="w-full h-96 rounded-xl shadow-md"
-                    src="https://www.youtube.com/embed/H6n3iNh4XLI" 
-                    title="The Attention Crisis | Johann Hari" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen
-                  ></iframe>
-                </div>
-                
-                <p className="text-sm text-dark/60 italic mb-8 text-center">
-                  Johann Hari discusses the attention crisis in modern society
-                </p>
-                
-                <h2 className="text-3xl font-heading font-bold mb-6 gradient-text">How Can You Participate?</h2>
-                
-                <p className="text-lg leading-relaxed mb-6">
-                  National No-Ads Day is calling on individuals, communities, and businesses across the world to switch off ad notifications and give a day for attention, spending 24 hours experiencing a life free from advertising interruptions.
-                </p>
-                
-                <p className="text-lg leading-relaxed mb-8">
-                  Whether you're into deep reading, creative pursuits, outdoor adventures, or quality time with loved ones—everyone can participate by disconnecting from ads and reconnecting with what truly matters. Use this day to rediscover activities that bring genuine fulfillment rather than algorithmic satisfaction.
-                </p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                  <div className="bg-light p-6 rounded-xl">
-                    <h4 className="font-bold text-xl mb-3 text-primary">For Individuals</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Turn off notifications for 24 hours</li>
-                      <li>Use ad-blockers on all devices</li>
-                      <li>Choose ad-free premium services for the day</li>
-                      <li>Engage in offline activities</li>
-                      <li>Journal about your experience</li>
-                    </ul>
-                  </div>
-                  
-                  <div className="bg-light p-6 rounded-xl">
-                    <h4 className="font-bold text-xl mb-3 text-secondary">For Businesses</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Offer ad-free experiences to customers</li>
-                      <li>Pause scheduled advertising campaigns</li>
-                      <li>Host offline community events</li>
-                      <li>Encourage employees to disconnect</li>
-                      <li>Develop attention-friendly policies</li>
-                    </ul>
-                  </div>
-                </div>
               </div>
               
               {/* Vision & Call to Action */}
               <div className="bg-primary/5 border border-primary/20 p-8 rounded-xl mb-12">
-                <h3 className="text-2xl font-heading font-bold mb-4 text-primary">Our Vision</h3>
+                <h3 className="text-2xl font-heading font-bold mb-4 text-primary">One day of rest, a year of attention</h3>
                 <p className="text-lg leading-relaxed mb-6">
-                  We envision a world where people have control over their attention, where technology enhances rather than exploits human potential, and where businesses thrive by providing genuine value rather than capturing attention at any cost.
+                  National No-Ads Day is not just about escaping ads—it’s about sparking a worldwide conversation. It’s a day to pause, reflect, and imagine a future where our attention is respected, our minds are clearer, and our connections are more genuine.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  National No-Ads Day isn't anti-technology or anti-business—it's pro-human. It's about creating a healthier relationship with our digital tools and establishing new norms that respect the precious resource of human attention.
+                  Join us in this movement to reclaim our focus—for the future of our attention, and for ourselves.
                 </p>
               </div>
               

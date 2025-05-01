@@ -210,7 +210,7 @@ export default function WhyNoAdsSection() {
                 <p className="text-dark/80 italic text-lg">
                   "Today, our attention has become a new economic resource. Protecting and managing it is essential for personal well-being."
                 </p>
-                <p className="text-right mt-2 font-semibold text-primary">
+                <p className="text-right mt-3 font-semibold text-primary text-sm">
                   — Catherine Price, Author of "How to Break Up With Your Phone"
                 </p>
               </div>
@@ -250,7 +250,7 @@ export default function WhyNoAdsSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full"></div>
             <BrainAnimation />
             
-            <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm text-dark/80 p-4 rounded-lg text-sm shadow-md">
+            <div className="absolute bottom-0.5 left-4 right-4 bg-white/20 backdrop-blur-sm text-dark/80 p-4 rounded-lg text-sm shadow-md">
               <div className="font-bold mb-1 text-primary">Brain Activity Visualization:</div>
               Watch how attention fragments during ad exposure (scattered activity) vs. focused state (unified activity).
             </div>
