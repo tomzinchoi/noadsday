@@ -6,6 +6,7 @@ import { TextPlugin } from 'gsap/dist/TextPlugin'
 import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import CounterSection from '@/components/CounterSection'
+import ParticipationSection from '@/components/ParticipationSection'
 import StatisticsSection from '@/components/StatisticsSection'
 import ValuePropositionSection from '@/components/ValuePropositionSection'
 import WhyNoAdsSection from '@/components/WhyNoAdsSection'
@@ -52,6 +53,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <CounterSection />
+      <ParticipationSection />
       <ValuePropositionSection />
       <StatisticsSection />
       <WhyNoAdsSection />

@@ -29,35 +29,42 @@ export default function CounterSection() {
         trigger: sectionRef.current,
         start: "top 70%",
         onEnter: () => {
+          // 카운터 값을 저장하기 위한 객체
+          const countTo = { value: 0 }
+          
           // Animate counter from 0 to 4000
-          gsap.to(counter, {
-            innerHTML: "4,000",
+          gsap.to(countTo, {
+            value: 4000,
             duration: 3,
-            snap: { innerHTML: 1 },
             ease: "power2.out",
             onUpdate: function() {
               // Make the counter speed up as the number grows
               const progress = this.progress()
-              const currentValue = parseInt(counter.innerHTML.replace(/,/g, ''))
+              let stepSize = 1
               
               if (progress < 0.5) {
                 // Slow start
-                counter.innerHTML = Math.round(currentValue).toLocaleString()
+                stepSize = 1
               } else if (progress < 0.8) {
                 // Medium speed
-                counter.innerHTML = Math.round(currentValue).toLocaleString()
+                stepSize = 10
               } else {
                 // Rapid finish
-                counter.innerHTML = Math.round(currentValue).toLocaleString()
+                stepSize = 50
               }
+              
+              // 실제 카운터에 표시할 값을 계산
+              const value = Math.round(countTo.value / stepSize) * stepSize
+              counter.innerHTML = value.toLocaleString()
             },
             onComplete: () => {
+              counter.innerHTML = "4,000"
               setCounterComplete(true)
             }
           })
           
           // Animate ad icons appearing as counter increases
-          for (let i = 0; i < 30; i++) {
+          for (let i = 0; i < 50; i++) {
             const icon = document.createElement('div')
             const randomIcon = adIcons[Math.floor(Math.random() * adIcons.length)]
             
@@ -70,7 +77,7 @@ export default function CounterSection() {
             gsap.to(icon, {
               opacity: 0.7,
               duration: 0.3,
-              delay: (i / 30) * 3, // Spread across the counter duration
+              delay: (i / 50) * 3, // Spread across the counter duration
               ease: "power1.out",
               onComplete: () => {
                 gsap.to(icon, {
@@ -125,7 +132,7 @@ export default function CounterSection() {
                 className="text-6xl md:text-8xl font-heading font-bold text-primary mb-2"
               >
                 0
-              </div>
+              </div> 
               
               <motion.div
                 initial={{ opacity: 0 }}
@@ -133,7 +140,7 @@ export default function CounterSection() {
                 transition={{ duration: 0.5 }}
                 className="text-lg md:text-xl text-dark/80 italic"
               >
-                and counting...
+                and more...
               </motion.div>
             </div>
           </div>

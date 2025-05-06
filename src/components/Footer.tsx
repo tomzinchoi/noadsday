@@ -145,10 +145,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link 
-                  href="/resources"
+                  href="/sources"
                   className="text-white/70 hover:text-white transition-colors"
                 >
-                  Resources
+                  Sources & References
                 </Link>
               </li>
               <li>
@@ -163,9 +163,9 @@ export default function Footer() {
           </div>
           
           <div id="footer-join">
-            <h3 className="text-xl font-heading font-bold mb-6">Stay Updated</h3>
+            <h3 className="text-xl font-heading font-bold mb-6">Be part of National No-Ads Day</h3>
             <p className="text-white/70 mb-4">
-              Subscribe to receive updates about National No-Ads Day.
+              Leave your email to receive updates, get involved.
             </p>
             
             <div className="relative">
@@ -212,7 +212,7 @@ export default function Footer() {
             </div>
             
             <p className="text-sm mt-4 text-white/50 italic">
-              <strong>Data Sources Note:</strong> Statistics presented on this site are compiled from marketing industry research, academic studies on attention and digital media consumption. Full references available in the Resources section.
+              <strong>Data Sources Note:</strong> All statistics on this site are based on verified academic research, industry reports, and trusted data sources related to attention, advertising, and digital media usage. For full references, visit the Resources section.
             </p>
           </div>
         </div>

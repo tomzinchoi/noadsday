@@ -185,7 +185,7 @@ export default function WhyNoAdsSection() {
           >
             <div className="space-y-6 text-lg">
               <p className="text-xl font-medium leading-relaxed">
-                In today's digital ecosystem, our attention has become the most valuable commodity. The average person's focus is interrupted by thousands of advertisements daily, leading to what experts call an <strong className="text-primary">attention crisis</strong>.
+                In today’s digital world, attention is currency. We’re hit with thousands of ads every day, leading to what experts call an <strong>attention crisis</strong>. This constant distraction doesn’t just waste time—it’s changing how we think, focus, and create.
               </p>
               
               <p>
@@ -193,25 +193,25 @@ export default function WhyNoAdsSection() {
               </p>
               
               <div className="bg-white p-6 rounded-xl shadow-md my-6 border-l-4 border-secondary">
-                <h3 className="text-xl font-bold mb-3 text-secondary">Ad-Free Premium Experience:</h3>
+                <h3 className="text-xl font-bold mb-3 text-secondary">Premium Content, No Ads:</h3>
                 <ul className="space-y-3 text-base">
                   <li className="flex items-start">
                     <span className="text-secondary mr-2 text-xl">✓</span>
-                    <span>72% of consumers value ad-free premium experiences more highly <span className="text-dark/60 text-sm">(Nielsen Consumer Survey)</span></span>
+                    <span>A growing number of people are willing to pay to avoid ads <span className="text-dark/60 text-sm"> (Deloitte, 2024)</span></span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2 text-xl">✓</span>
-                    <span>The average consumer subscribes to more than 7 paid services <span className="text-dark/60 text-sm">(Deloitte Digital Media Trends)</span></span>
+                    <span>The average U.S. household pays for around 4 streaming services, showing clear demand for quality, ad-free content</span>
                   </li>
                 </ul>
               </div>
               
               <div className="bg-primary/5 p-6 rounded-lg border border-primary/20">
                 <p className="text-dark/80 italic text-lg">
-                  "Today, our attention has become a new economic resource. Protecting and managing it is essential for personal well-being."
+                  “Our attention is the most valuable thing we have... When we decide what to pay attention to... we are making a broader decision about how we want to spend our lives.”
                 </p>
                 <p className="text-right mt-3 font-semibold text-primary text-sm">
-                  — Catherine Price, Author of "How to Break Up With Your Phone"
+                  — Catherine Price, How to Break Up With Your Phone
                 </p>
               </div>
               
@@ -252,7 +252,7 @@ export default function WhyNoAdsSection() {
             
             <div className="absolute bottom-0.5 left-4 right-4 bg-white/20 backdrop-blur-sm text-dark/80 p-4 rounded-lg text-sm shadow-md">
               <div className="font-bold mb-1 text-primary">Brain Activity Visualization:</div>
-              Watch how attention fragments during ad exposure (scattered activity) vs. focused state (unified activity).
+              See how attention shifts when exposed to ads (scattered activity) compared to a focused state (smooth, unified activity).
             </div>
           </motion.div>
         </div>

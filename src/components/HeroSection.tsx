@@ -1,8 +1,9 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { TextPlugin } from 'gsap/dist/TextPlugin'
 import { motion } from 'framer-motion'
 import CountdownTimer from './CountdownTimer'
+import ClientOnly from './ClientOnly'
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
@@ -13,8 +14,18 @@ export default function HeroSection() {
   const headlineRef = useRef<HTMLHeadingElement>(null)
   const sectionRef = useRef<HTMLDivElement>(null)
   const adIconsRef = useRef<HTMLDivElement>(null)
+  // 클라이언트 측에서만 날짜를 계산하기 위한 state 추가
+  const [eventDate, setEventDate] = useState<Date | null>(null)
+  const [eventYear, setEventYear] = useState<number | null>(null)
   
   useEffect(() => {
+    // 클라이언트 측에서만 날짜 계산 수행
+    const currentYear = new Date().getFullYear()
+    const currentMonth = new Date().getMonth()
+    const calculatedEventYear = currentMonth >= 8 ? currentYear + 1 : currentYear
+    setEventYear(calculatedEventYear)
+    setEventDate(new Date(calculatedEventYear, 8, 15)) // Month is 0-indexed, so 8 = September
+    
     // Typing effect for headline
     if (headlineRef.current) {
       const tl = gsap.timeline()
@@ -98,79 +109,37 @@ export default function HeroSection() {
     }
   }, [])
   
-  // Next event date (September 15th of next year)
-  const currentYear = new Date().getFullYear()
-  const currentMonth = new Date().getMonth()
-  const eventYear = currentMonth >= 8 ? currentYear + 1 : currentYear
-  const eventDate = new Date(eventYear, 8, 15) // Month is 0-indexed, so 8 = September
-  
   return (
     <section 
       ref={sectionRef}
       className="min-h-screen relative flex items-center overflow-hidden"
       style={{ 
-        background: 'linear-gradient(135deg, #1a73e8 0%, #34a853 100%)'
+        backgroundImage: "url('/assets/images/pexels-mikhail-nilov-6965536.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+        
+        
+        //background: 'linear-gradient(135deg, #1a73e8 0%, #34a853 100%)'
       }}
     >
-      {/* Parallax background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="parallax-layer" style={{ opacity: 0.05 }}>
-          {[...Array(20)].map((_, i) => (
-            <div 
-              key={i}
-              className="absolute rounded-full bg-white"
-              style={{
-                width: `${Math.random() * 300 + 50}px`,
-                height: `${Math.random() * 300 + 50}px`,
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                opacity: Math.random() * 0.3 + 0.1,
-              }}
-            />
-          ))}
-        </div>
-        <div className="parallax-layer" style={{ opacity: 0.1 }}>
-          <svg 
-            viewBox="0 0 1440 400" 
-            fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute bottom-0 left-0 w-full"
-          >
-            <path 
-              d="M0,192L48,208C96,224,192,256,288,245.3C384,235,480,181,576,181.3C672,181,768,235,864,234.7C960,235,1056,181,1152,176C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" 
-              fill="white"
-            />
-          </svg>
-        </div>
-      </div>
+      <div className="absolute inset-0 bg-black opacity-30"></div>
+ 
       
-      {/* Ad icons that will fade away */}
-      <div ref={adIconsRef} className="absolute inset-0 pointer-events-none">
-        {['📱', '🛒', '📺', '💻', '🎮', '📢', '💰', '🔔', '📝', '📰', '🎬', '📈'].map((icon, i) => (
-          <div 
-            key={i}
-            className="absolute text-4xl md:text-6xl"
-            style={{
-              top: `${Math.random() * 80 + 10}%`,
-              left: `${Math.random() * 80 + 10}%`,
-            }}
-          >
-            {icon}
-          </div>
-        ))}
-      </div>
-      
-      <div className="container mx-auto px-4 relative z-10 text-center text-white pt+10">
-        {/* Reduced padding-top from pt-20 to pt-10 to move content higher */}
+      <div className="container mx-auto px-4 relative z-10 text-center text-white pt-10">
+        {/* Fixed typo in pt+10 to pt-10 */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="mb-6" /* Reduced margin bottom from mb-6 to mb-4 */
         >
-          <span className="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm">
-            September 15, {eventYear}
-          </span>
+          <ClientOnly>
+            {eventYear && (
+              <span className="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm">
+                September 15, {eventYear}
+              </span>
+            )}
+          </ClientOnly>
         </motion.div>
         
         <h1 
@@ -196,14 +165,16 @@ export default function HeroSection() {
           "One day of rest, a year of attention."
         </motion.p>
         
-        {/* Countdown Timer */}
+        {/* Countdown Timer - wrapped in ClientOnly to prevent hydration errors */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 3 }}
           className="mb-10"
         >
-          <CountdownTimer targetDate={eventDate} />
+          <ClientOnly>
+            {eventDate && <CountdownTimer targetDate={eventDate} />}
+          </ClientOnly>
         </motion.div>
         
         {/* Scroll indicator */}
@@ -211,7 +182,8 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
-          className="absolute bottom+30 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-30 left-1/2 transform -translate-x-1/2"
+          /* Fixed typo in bottom+30 to bottom-30 */
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}

@@ -135,7 +135,17 @@ export default function AboutPage() {
                 <p className="text-lg leading-relaxed mb-8">
                   National No-Ads Day invites you to switch off notifications and spend 24 hours experiencing a life free from advertising interruptions. One day might not seem like much, but the transformation happens when your perspective shifts, and you rediscover what it feels like to be fully present—when you, and those like you across the globe, give a day for your mental wellbeing.
                 </p>
+
+                <h2 className="text-3xl font-heading font-bold mb-6 gradient-text">Be Part of the Change</h2>
                 
+                <p className="text-lg leading-relaxed mb-6">
+                  Imagine a single day where the constant noise of advertisements fades into silence—a day where your attention is truly your own. National No-Ads Day is that day. By participating, you open the door to a world that prioritizes focus, connection, and authenticity.
+                </p>
+                
+                <p className="text-lg leading-relaxed mb-8">
+                  For individuals, it’s a chance to rediscover the richness of life without distractions: the joy of a quiet morning, the clarity that comes from unplugging, and the satisfaction of being present in your own moments. For businesses, it’s an opportunity to lead with trust, offering customers ad-free experiences that speak louder than any campaign ever could, while giving back to causes that truly matter. And for communities, it’s a moment to come together, to transform ad-filled spaces into art, and to show what’s possible when we focus on what unites us.
+                </p>
+
                 <div className="bg-light p-6 rounded-xl shadow-sm mb-12">
                   <h3 className="font-bold text-xl mb-4">For the future of our attention, and ourselves</h3>
                   <p className="text-lg leading-relaxed">
@@ -151,7 +161,7 @@ export default function AboutPage() {
                   National No-Ads Day is not just about escaping ads—it’s about sparking a worldwide conversation. It’s a day to pause, reflect, and imagine a future where our attention is respected, our minds are clearer, and our connections are more genuine.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Join us in this movement to reclaim our focus—for the future of our attention, and for ourselves.
+                This isn’t just a break from ads—it’s an invitation to rethink what we value, to reclaim the power of our attention, and to build a future where authenticity thrives. Will you join us in this revolution of focus and connection? This one day could spark a movement that changes everything.
                 </p>
               </div>
               

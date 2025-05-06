@@ -69,13 +69,13 @@ export default function Header() {
             Why No Ads?
           </Link>
           <Link
-            href="/resources"
+            href="/sources"
             className={`font-medium ${
               isScrolled ? 'text-dark hover:text-primary' : 'text-white/90 hover:text-white'
             } transition-colors`}
             onClick={handleLinkClick}
           >
-            Resources
+            Sources & References
           </Link>
           <Link
             href="/#day-in-life"
@@ -152,11 +152,11 @@ export default function Header() {
                   Why No Ads?
                 </Link>
                 <Link
-                  href="/resources"
+                  href="/sources"
                   className="font-medium text-dark hover:text-primary transition-colors"
                   onClick={handleLinkClick}
                 >
-                  Resources
+                  Sources & References
                 </Link>
                 <Link
                   href="/#day-in-life"

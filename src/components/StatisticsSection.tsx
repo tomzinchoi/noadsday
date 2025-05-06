@@ -174,14 +174,14 @@ export default function StatisticsSection() {
             viewport={{ once: true }}
             className="card"
           >
-            <h3 className="text-xl font-heading font-bold mb-6">Subscription Services Growth</h3>
+            <h3 className="text-xl font-heading font-bold mb-6">Subscription E-Commerce Market Size</h3>
             <div className="h-80">
               <Bar 
                 data={{
-                  labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
+                  labels: ['2024', '2025', '2026', '2027', '2028', '2029', '2030'],
                   datasets: [{
-                    label: 'Annual Growth Rate (%)',
-                    data: [12.5, 14.2, 15.8, 16.5, 17.3, 18.1],
+                    label: 'Annual Growth (USD Billion)',
+                    data: [18.82, 20.58, 22.51, 24.61, 26.92, 29.44, 32.19],
                     backgroundColor: 'rgba(250, 123, 23, 0.7)',
                     borderColor: 'rgba(250, 123, 23, 1)',
                     borderWidth: 1
@@ -197,7 +197,7 @@ export default function StatisticsSection() {
                     tooltip: {
                       callbacks: {
                         label: function(context: any) {
-                          return `Growth Rate: ${context.parsed.y}%`
+                          return `Annual Growth: ${context.parsed.y} billion USD`
                         }
                       }
                     }
@@ -210,7 +210,7 @@ export default function StatisticsSection() {
                       },
                       title: {
                         display: true,
-                        text: 'Growth Rate (%)'
+                        text: 'Annual Growth (USD Billion)'
                       }
                     },
                     x: {
@@ -230,7 +230,7 @@ export default function StatisticsSection() {
               />
             </div>
             <p className="text-sm text-dark/60 mt-4 italic">
-              The global digital subscription services market is growing at 17.3% annually (Source: Statista report)
+              The global subscription e-commerce market is predicted to grow from USD 18.82 billion in 2024 to approximately USD 46.05 billion by 2034, at a CAGR of 9.36% from 2025 to 2034. (Source: Precedence Research, 2024)
             </p>
           </motion.div>
         </div>
@@ -245,10 +245,10 @@ export default function StatisticsSection() {
             viewport={{ once: true }}
             className="card"
           >
-            <div className="text-4xl text-primary mb-4">86%</div>
+            <div className="text-4xl text-primary mb-4">71%</div>
             <h3 className="text-lg font-heading font-bold mb-2">Digital Ad Fatigue</h3>
             <p className="text-dark/70 text-sm">
-              86% of social media users report feeling fatigued by excessive ads (Source: Social Media Trends Report)
+              74% of social media users believe there are too many ads. (Source: SurveyMonkey, 2024)
             </p>
           </motion.div>
           
@@ -260,10 +260,10 @@ export default function StatisticsSection() {
             viewport={{ once: true }}
             className="card"
           >
-            <div className="text-4xl text-secondary mb-4">7+</div>
+            <div className="text-4xl text-secondary mb-4">61$</div>
             <h3 className="text-lg font-heading font-bold mb-2">Subscription Services</h3>
             <p className="text-dark/70 text-sm">
-              The average consumer subscribes to more than 7 paid services (Source: Deloitte Digital Media Trends)
+            U.S. subscribing households spend an average of $61 per month on four streaming video-on-demand (SVOD) services. (Source: Deloitte, 2024)
             </p>
           </motion.div>
           
@@ -275,10 +275,10 @@ export default function StatisticsSection() {
             viewport={{ once: true }}
             className="card"
           >
-            <div className="text-4xl text-accent mb-4">$650B</div>
+            <div className="text-4xl text-accent mb-4">$468B</div>
             <h3 className="text-lg font-heading font-bold mb-2">Annual Productivity Loss</h3>
             <p className="text-dark/70 text-sm">
-              Productivity loss due to attention dispersion is estimated at $650 billion annually (Source: Global Productivity Institute)
+            $468 billion lost annually in the U.S. due to distractions. (Source: Dropbox, 2023)
             </p>
           </motion.div>
         </div>
@@ -291,7 +291,7 @@ export default function StatisticsSection() {
           className="mt-12 text-center"
         >
           <p className="text-sm text-dark/60 max-w-3xl mx-auto">
-            Data sources: Analysis of digital media consumption patterns, marketing industry reports, and screen time research studies. Estimates suggest individuals may be exposed to thousands of ads daily, with figures ranging from 4,000 to over 10,000, depending on lifestyle and media consumption (Source: Marketing industry estimates, Forbes, Digital Marketing Institute).
+            Data Sources: Recent studies show that people may see 4,000–10,000 ads per day, depending on their media use and lifestyle. (Sources: Marketing industry estimates, Forbes, Digital Marketing Institute)
           </p>
         </motion.div>
       </div>

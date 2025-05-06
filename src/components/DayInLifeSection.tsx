@@ -14,7 +14,7 @@ const dailyActivities = [
     time: '06:00',
     activity: 'Wake Up',
     description: 'Check phone notifications',
-    adsWith: 35,
+    adsWith: 85,
     adsWithout: 0,
     icon: '🛌'
   },
@@ -22,7 +22,7 @@ const dailyActivities = [
     time: '07:00',
     activity: 'Morning Routine',
     description: 'Social media while eating breakfast',
-    adsWith: 85,
+    adsWith: 120,
     adsWithout: 0,
     icon: '🍳'
   },
@@ -30,15 +30,15 @@ const dailyActivities = [
     time: '08:30',
     activity: 'Commute',
     description: 'Podcasts, billboards, radio ads',
-    adsWith: 120,
-    adsWithout: 15,
+    adsWith: 250,
+    adsWithout: 100,
     icon: '🚗'
   },
   {
     time: '09:30',
     activity: 'Work AM',
     description: 'Checking email, work websites, news',
-    adsWith: 250,
+    adsWith: 175,
     adsWithout: 30,
     icon: '💻'
   },
@@ -46,7 +46,7 @@ const dailyActivities = [
     time: '12:00',
     activity: 'Lunch Break',
     description: 'Social media, news apps',
-    adsWith: 175,
+    adsWith: 230,
     adsWithout: 0,
     icon: '🥪'
   },
@@ -54,23 +54,23 @@ const dailyActivities = [
     time: '14:00',
     activity: 'Work PM',
     description: 'Online meetings, research, email',
-    adsWith: 230,
-    adsWithout: 25,
+    adsWith: 100,
+    adsWithout: 20,
     icon: '📊'
   },
   {
     time: '17:30',
     activity: 'Commute Home',
     description: 'Streaming music, billboards',
-    adsWith: 100,
-    adsWithout: 10,
+    adsWith: 250,
+    adsWithout: 100,
     icon: '🚇'
   },
   {
     time: '18:30',
     activity: 'Relax Mode',
     description: 'Streaming services, mobile games',
-    adsWith: 350,
+    adsWith: 100,
     adsWithout: 0,
     icon: '📺'
   },
@@ -246,7 +246,7 @@ export default function DayInLifeSection() {
           <div className={`text-4xl md:text-5xl font-bold transition-colors ${
             viewMode === 'with-ads' ? 'text-primary' : 'text-secondary'
           }`}>
-            {totalAds.toLocaleString()}
+            {totalAds.toLocaleString()}<span className='text-sm text-dark/60 font-thin'>approx.</span>
           </div>
         </div>
         
@@ -413,11 +413,11 @@ export default function DayInLifeSection() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>86% of social media users report feeling fatigued by excessive ads</span>
+                  <span>74% of social media users report feeling fatigued by excessive ads</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>Productivity loss estimated at $650 billion annually</span>
+                  <span>Productivity loss estimated at $468 billion annually</span>
                 </li>
               </ul>
             </div>
