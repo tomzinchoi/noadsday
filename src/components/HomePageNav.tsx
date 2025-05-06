@@ -35,8 +35,8 @@ export default function HomePageNav() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToSection = (sectionId) => {
-    const section = document.querySelector(`#${sectionId}`)
+  const scrollToSection = (sectionId: string) => {
+    const section = document.querySelector(`#${sectionId}`) as HTMLElement
     if (section) {
       window.scrollTo({
         top: section.offsetTop - 80, // Adjust for header height
