@@ -12,6 +12,9 @@ interface CountdownTimerProps {
 }
 
 export default function CountdownTimer({ targetDate }: CountdownTimerProps) {
+  // Add client-side rendering flag
+  const [isClient, setIsClient] = useState(false)
+  
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
     hours: 0,
@@ -20,6 +23,9 @@ export default function CountdownTimer({ targetDate }: CountdownTimerProps) {
   })
 
   useEffect(() => {
+    // Mark as client-side rendered
+    setIsClient(true)
+    
     const calculateTimeLeft = () => {
       const difference = targetDate.getTime() - new Date().getTime()
       
@@ -52,6 +58,28 @@ export default function CountdownTimer({ targetDate }: CountdownTimerProps) {
     return () => clearInterval(timer)
   }, [targetDate])
 
+  // Show placeholder during server-side rendering
+  if (!isClient) {
+    return (
+      <div className="flex justify-center items-center space-x-4 md:space-x-6 text-center">
+        {[
+          { label: 'Days', value: '00' },
+          { label: 'Hours', value: '00' },
+          { label: 'Minutes', value: '00' },
+          { label: 'Seconds', value: '00' }
+        ].map((item) => (
+          <div key={item.label} className="flex flex-col">
+            <div className="flex justify-center items-center w-16 h-16 md:w-20 md:h-20 bg-white/20 backdrop-blur-md rounded-lg text-white font-bold text-2xl md:text-3xl mb-2">
+              {item.value}
+            </div>
+            <span className="text-xs md:text-sm text-white/80">{item.label}</span>
+          </div>
+        ))}
+      </div>
+    )
+  }
+
+  // Client-side rendering with actual values
   return (
     <div className="flex justify-center items-center space-x-4 md:space-x-6 text-center">
       {[
