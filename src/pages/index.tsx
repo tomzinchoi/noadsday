@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic'
 // Import the server-safe components normally
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import HomePageNav from '@/components/HomePageNav'
 
 // Dynamically import client-side components with { ssr: false }
 const HeroSection = dynamic(() => import('@/components/HeroSection'), { ssr: false })
@@ -57,14 +58,31 @@ export default function Home() {
   return (
     <main ref={mainRef} className="min-h-screen">
       <Header />
-      <HeroSection />
-      <CounterSection />
-      <ParticipationSection />
-      <ValuePropositionSection />
-      <StatisticsSection />
-      <WhyNoAdsSection />
-      <ExpertQuotesSection />
-      <DayInLifeSection />
+      <HomePageNav />
+      <section id="hero">
+        <HeroSection />
+      </section>
+      <section id="counter">
+        <CounterSection />
+      </section>
+      <section id="participation">
+        <ParticipationSection />
+      </section>
+      <section id="value-proposition">
+        <ValuePropositionSection />
+      </section>
+      <section id="statistics">
+        <StatisticsSection />
+      </section>
+      <section id="why-no-ads">
+        <WhyNoAdsSection />
+      </section>
+      <section id="expert-quotes">
+        <ExpertQuotesSection />
+      </section>
+      <section id="day-in-life">
+        <DayInLifeSection />
+      </section>
       <Footer />
     </main>
   )

@@ -39,8 +39,17 @@ export default function Header() {
           </motion.div>
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation - Streamlined */}
         <nav className="hidden md:flex items-center space-x-8">
+          <Link
+            href="/"
+            className={`font-medium ${
+              isScrolled ? 'text-dark hover:text-primary' : 'text-white/90 hover:text-white'
+            } transition-colors`}
+            onClick={handleLinkClick}
+          >
+            Home
+          </Link>
           <Link
             href="/about"
             className={`font-medium ${
@@ -51,54 +60,24 @@ export default function Header() {
             About
           </Link>
           <Link
-            href="/#statistics"
-            className={`font-medium ${
-              isScrolled ? 'text-dark hover:text-primary' : 'text-white/90 hover:text-white'
-            } transition-colors`}
-            onClick={handleLinkClick}
-          >
-            Statistics
-          </Link>
-          <Link
-            href="/#why-no-ads"
-            className={`font-medium ${
-              isScrolled ? 'text-dark hover:text-primary' : 'text-white/90 hover:text-white'
-            } transition-colors`}
-            onClick={handleLinkClick}
-          >
-            Why No Ads?
-          </Link>
-          <Link
             href="/sources"
             className={`font-medium ${
               isScrolled ? 'text-dark hover:text-primary' : 'text-white/90 hover:text-white'
             } transition-colors`}
             onClick={handleLinkClick}
           >
-            Sources & References
+            Sources
           </Link>
-          <Link
-            href="/#day-in-life"
-            className={`font-medium ${
-              isScrolled ? 'text-dark hover:text-primary' : 'text-white/90 hover:text-white'
-            } transition-colors`}
-            onClick={handleLinkClick}
-          >
-            Daily Impact
-          </Link>
-        </nav>
-        
-        {/* Action Button */}
-        <div className="hidden md:block">
-          <a 
-            href="#footer-join" 
+          <a
+            href="#footer-join"
             className={`font-medium ${
               isScrolled ? 'text-primary hover:text-primary/80' : 'text-white hover:text-white/80'
             } transition-colors`}
+            onClick={handleLinkClick}
           >
-            Stay Updated
+            Take Action
           </a>
-        </div>
+        </nav>
 
         {/* Mobile Menu Button */}
         <button 
@@ -118,7 +97,7 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Streamlined */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -131,6 +110,13 @@ export default function Header() {
             <div className="container mx-auto px-4 py-4">
               <nav className="flex flex-col space-y-4">
                 <Link
+                  href="/"
+                  className="font-medium text-dark hover:text-primary transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  Home
+                </Link>
+                <Link
                   href="/about"
                   className="font-medium text-dark hover:text-primary transition-colors"
                   onClick={handleLinkClick}
@@ -138,39 +124,18 @@ export default function Header() {
                   About
                 </Link>
                 <Link
-                  href="/#statistics"
-                  className="font-medium text-dark hover:text-primary transition-colors"
-                  onClick={handleLinkClick}
-                >
-                  Statistics
-                </Link>
-                <Link
-                  href="/#why-no-ads"
-                  className="font-medium text-dark hover:text-primary transition-colors"
-                  onClick={handleLinkClick}
-                >
-                  Why No Ads?
-                </Link>
-                <Link
                   href="/sources"
                   className="font-medium text-dark hover:text-primary transition-colors"
                   onClick={handleLinkClick}
                 >
-                  Sources & References
-                </Link>
-                <Link
-                  href="/#day-in-life"
-                  className="font-medium text-dark hover:text-primary transition-colors"
-                  onClick={handleLinkClick}
-                >
-                  Daily Impact
+                  Sources
                 </Link>
                 <a 
                   href="#footer-join" 
                   className="font-medium text-primary hover:text-primary/80 transition-colors"
                   onClick={handleLinkClick}
                 >
-                  Stay Updated
+                  Take Action
                 </a>
               </nav>
             </div>
