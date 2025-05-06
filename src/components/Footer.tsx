@@ -254,7 +254,7 @@ export default function Footer() {
         
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-white/50 text-sm">
-            &copy; {currentYear} National No-Ads Day | Educational Project
+            &copy; {currentYear} National No-Ads Day | Educational Project | Chulung Choi
           </p>
         </div>
       </div>
