@@ -245,7 +245,7 @@ export default function StatisticsSection() {
             viewport={{ once: true }}
             className="card"
           >
-            <div className="text-4xl text-primary mb-4">71%</div>
+            <div className="text-4xl text-primary mb-4">74%</div>
             <h3 className="text-lg font-heading font-bold mb-2">Digital Ad Fatigue</h3>
             <p className="text-dark/70 text-sm">
               74% of social media users believe there are too many ads. (Source: SurveyMonkey, 2024)
