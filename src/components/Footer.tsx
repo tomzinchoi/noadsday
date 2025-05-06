@@ -118,48 +118,83 @@ export default function Footer() {
           
           <div>
             <h3 className="text-xl font-heading font-bold mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link 
-                  href="/about"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/#statistics"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  Statistics
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/#why-no-ads"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  Why No Ads?
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/sources"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  Sources & References
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/#day-in-life"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  Daily Impact
-                </Link>
-              </li>
-            </ul>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4">
+              {/* Main Navigation Links */}
+              <div>
+                <ul className="space-y-3 mb-6">
+                  <li>
+                    <Link 
+                      href="/"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      href="/about"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      href="/sources"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
+                      Sources
+                    </Link>
+                  </li>
+                  <li>
+                    <a 
+                      href="#footer-join"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
+                      Take Action
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              {/* Page Sections Navigation */}
+              <div>
+                <ul className="space-y-3">
+                  <li>
+                    <Link 
+                      href="/#statistics"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
+                      Statistics
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      href="/#why-no-ads"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
+                      Why No Ads?
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      href="/#day-in-life"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
+                      Daily Impact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      href="/#participation"
+                      className="text-white/70 hover:text-white transition-colors"
+                    >
+                      Participate
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           
           <div id="footer-join">

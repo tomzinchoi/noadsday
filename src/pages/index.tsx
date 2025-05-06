@@ -2,17 +2,22 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { TextPlugin } from 'gsap/dist/TextPlugin'
+import dynamic from 'next/dynamic'
 
+// Import the server-safe components normally
 import Header from '@/components/Header'
-import HeroSection from '@/components/HeroSection'
-import CounterSection from '@/components/CounterSection'
-import ParticipationSection from '@/components/ParticipationSection'
-import StatisticsSection from '@/components/StatisticsSection'
-import ValuePropositionSection from '@/components/ValuePropositionSection'
-import WhyNoAdsSection from '@/components/WhyNoAdsSection'
-import ExpertQuotesSection from '@/components/ExpertQuotesSection'
-import DayInLifeSection from '@/components/DayInLifeSection'
 import Footer from '@/components/Footer'
+import HomePageNav from '@/components/HomePageNav'
+
+// Dynamically import client-side components with { ssr: false }
+const HeroSection = dynamic(() => import('@/components/HeroSection'), { ssr: false })
+const CounterSection = dynamic(() => import('@/components/CounterSection'), { ssr: false })
+const ParticipationSection = dynamic(() => import('@/components/ParticipationSection'), { ssr: false })
+const StatisticsSection = dynamic(() => import('@/components/StatisticsSection'), { ssr: false })
+const ValuePropositionSection = dynamic(() => import('@/components/ValuePropositionSection'), { ssr: false })
+const WhyNoAdsSection = dynamic(() => import('@/components/WhyNoAdsSection'), { ssr: false })
+const ExpertQuotesSection = dynamic(() => import('@/components/ExpertQuotesSection'), { ssr: false })
+const DayInLifeSection = dynamic(() => import('@/components/DayInLifeSection'), { ssr: false })
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
@@ -24,6 +29,8 @@ export default function Home() {
 
   useEffect(() => {
     // Setup animations that require the DOM to be loaded
+    if (typeof window === 'undefined') return
+
     const ctx = gsap.context(() => {
       // Initialize page animations here
       
@@ -51,14 +58,31 @@ export default function Home() {
   return (
     <main ref={mainRef} className="min-h-screen">
       <Header />
-      <HeroSection />
-      <CounterSection />
-      <ParticipationSection />
-      <ValuePropositionSection />
-      <StatisticsSection />
-      <WhyNoAdsSection />
-      <ExpertQuotesSection />
-      <DayInLifeSection />
+      <HomePageNav />
+      <section id="hero">
+        <HeroSection />
+      </section>
+      <section id="counter">
+        <CounterSection />
+      </section>
+      <section id="participation">
+        <ParticipationSection />
+      </section>
+      <section id="value-proposition">
+        <ValuePropositionSection />
+      </section>
+      <section id="statistics">
+        <StatisticsSection />
+      </section>
+      <section id="why-no-ads">
+        <WhyNoAdsSection />
+      </section>
+      <section id="expert-quotes">
+        <ExpertQuotesSection />
+      </section>
+      <section id="day-in-life">
+        <DayInLifeSection />
+      </section>
       <Footer />
     </main>
   )

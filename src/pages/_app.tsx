@@ -1,18 +1,27 @@
 import '@/styles/globals.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 export default function App({ Component, pageProps }: AppProps) {
+  const [isClient, setIsClient] = useState(false)
+  
   useEffect(() => {
-    // Initialize AOS animation library
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: true,
-    })
+    // Mark as client-side
+    setIsClient(true)
+    
+    // Initialize AOS animation library only on client
+    if (typeof window !== 'undefined') {
+      // Dynamic import AOS within useEffect
+      import('aos').then((AOS) => {
+        AOS.default.init({
+          duration: 800,
+          once: false,
+          mirror: true,
+        })
+      })
+    }
   }, [])
 
   return (
